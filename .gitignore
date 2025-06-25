@@ -1,0 +1,10 @@
+.idea/
+
+# War files
+*.war
+configs/openelis/war/
+
+# Log files and directories
+*.log
+configs/openelis/logs/
+logs/

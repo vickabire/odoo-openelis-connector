@@ -1,0 +1,189 @@
+services:
+  certs:
+    container_name: oe-certs
+    image: itechuw/certgen:main
+    restart: always
+    environment:
+      - KEYSTORE_PW="kspass"
+      - TRUSTSTORE_PW="tspass"
+    networks:
+      - hie
+    volumes:
+      -  key_trust-store-volume:/etc/openelis-global
+      -  keys-vol:/etc/ssl/private/
+      -  certs-vol:/etc/ssl/certs/
+
+  database:
+    container_name: openelisglobal-database
+    image: postgres:14.4
+    ports:
+      - "15432:5432"
+    restart: always
+    env_file:
+      - ./configs/openelis/database/database.env
+    volumes:
+      # preserves the database between containers
+      - db-data2:/var/lib/postgresql/data
+      # files here will run on install
+      - ./configs/openelis/database/dbInit:/docker-entrypoint-initdb.d
+    networks:
+      - hie
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-q", "-d", "clinlims", "-U", "clinlims" ]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+
+  oe.openelis.org:
+    container_name: openelisglobal-webapp
+    image: itechuw/openelis-global-2-dev:develop
+    depends_on:
+      - database
+      - certs
+      - odoo.openelis.org
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    restart: always
+    networks:
+      hie:
+        ipv4_address: 172.20.1.121
+
+    environment:
+      - DEFAULT_PW=adminADMIN!
+      - TZ=Africa/Nairobi
+      - CATALINA_OPTS= -Ddatasource.url=jdbc:postgresql://database:5432/clinlims -Ddatasource.username=clinlims -Ddatasource.password=clinlims
+      - ODOO_MAPPING_FILE=/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
+    volumes:
+      -  key_trust-store-volume:/etc/openelis-global
+      -  lucene_index-vol:/var/lib/lucene_index
+      - ./configs/openelis/plugins/:/var/lib/openelis-global/plugins
+      - ./configs/openelis/logs/oeLogs:/var/lib/openelis-global/logs
+      - ./configs/openelis/logs/tomcatLogs/:/usr/local/tomcat/logs
+      - ./configs/openelis/tomcat/oe_server.xml:/usr/local/tomcat/conf/server.xml
+      - ./configs/openelis/war/OpenELIS-Global.war:/usr/local/tomcat/webapps/OpenELIS-Global.war
+      - ./configs/openelis/properties/SystemConfiguration.properties:/var/lib/openelis-global/properties/SystemConfiguration.properties
+      - ./configs/openelis/test-map/test-loinc-map.csv:/var/lib/openelis-global/plugin-test-mappings/test-loinc-map.csv
+      - ./configs/openelis/properties/odoo-test-product-mapping.properties:/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
+    secrets:
+      - source: datasource.password
+      - source: common.properties
+      - source: odoo-test-product-mapping.properties
+
+  fhir.openelis.org:
+    container_name: external-fhir-api
+    image: hapiproject/hapi:v6.6.0-tomcat
+    depends_on:
+      - database
+      - certs
+    ports:
+      - "8081:8080"
+      - "8444:8443"
+    networks:
+      - hie
+    restart: always
+    environment:
+      SPRING_CONFIG_LOCATION: file:///run/secrets/hapi_application.yaml
+      TZ: Africa/Nairobi
+      JAVA_OPTS: "-Djavax.net.ssl.trustStore=/etc/openelis-global/truststore 
+                  -Djavax.net.ssl.trustStorePassword=tspass
+                  -Djavax.net.ssl.trustStoreType=pkcs12 
+                  -Djavax.net.ssl.keyStore=/etc/openelis-global/keystore 
+                  -Djavax.net.ssl.keyStorePassword=kspass 
+                  -Djavax.net.ssl.keyStoreType=pkcs12"
+
+    volumes:
+      -  key_trust-store-volume:/etc/openelis-global
+      - ./configs/openelis/tomcat/hapi_server.xml:/opt/bitnami/tomcat/conf/server.xml
+    secrets:
+      - source: hapi_application.yaml
+
+  frontend.openelis.org:
+    image: itechuw/openelis-global-2-frontend-dev:develop
+    container_name: openelisglobal-front-end
+    networks:
+      - hie
+
+  proxy:
+    image: nginx:1.15-alpine
+    container_name: openelisglobal-proxy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - certs-vol:/etc/nginx/certs/
+      - keys-vol:/etc/nginx/keys/
+      - ./configs/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - hie
+    restart: unless-stopped
+    depends_on:
+      - certs
+
+  odoo.openelis.org:
+    container_name: odoo.openelis.org
+    # Use the official Odoo image or a custom one if you have specific requirements
+    # If you have a custom image, replace 'mekomsolutions/odoo' with your image name
+    # For example, if you have built a custom image, it might look like 'my-odoo-image:latest'
+    # If you are using a custom image, ensure it has the necessary addons and configurations
+    # If you are using a custom image, ensure it has the necessary addons and configurations 
+    image: mekomsolutions/odoo
+    depends_on:
+      - odoo-db
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=odoo-db
+      - USER=odoo
+      - PASSWORD=odoo
+      - ADDONS=odoo_initializer,sale_management,stock,account_account
+      - INITIALIZER_DATA_FILES_PATH=/mnt/odoo_config
+      - INITIALIZER_CONFIG_FILE_PATH=/mnt/odoo_config/initializer_config.json
+    volumes:
+      - ./odoo/addons:/mnt/extra-addons
+      - ./configs/odoo/initializer_config:/mnt/odoo_config
+      - odoo-data:/var/lib/odoo
+      - ./configs/odoo/config:/etc/odoo
+    networks:
+      - hie
+    restart: unless-stopped
+
+  odoo-db:
+    container_name: odoo-db
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=odoo
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data
+    networks:
+      - hie
+    restart: unless-stopped
+
+secrets:
+    datasource.password:
+      file: ./configs/openelis/properties/datasource.password
+    common.properties:
+      file: ./configs/openelis/properties/common.properties
+    hapi_application.yaml:
+      file: ./configs/openelis/properties/hapi_application.yaml
+    odoo-test-product-mapping.properties:
+      file: ./configs/openelis/properties/odoo-test-product-mapping.properties
+
+networks:
+  hie:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.1.0/24
+
+volumes:
+  db-data2:
+  key_trust-store-volume:
+  certs-vol:
+  certs:
+  keys-vol:
+  lucene_index-vol:
+  odoo-data:
+  odoo-db-data:
