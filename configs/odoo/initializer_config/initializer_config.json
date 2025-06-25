@@ -1,0 +1,7 @@
+[
+  {
+    "name": "product",
+    "model": "product.product",
+    "file": "product/products.csv"
+  }
+]
