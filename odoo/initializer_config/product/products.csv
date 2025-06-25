@@ -1,0 +1,253 @@
+id,name,list_price,type
+odoo_test_13945_1,13945-1,0.00,service
+odoo_test_13954_3,13954-3,0.00,service
+odoo_test_15205_8,15205-8,0.00,service
+odoo_test_19053_8,19053-8,0.00,service
+odoo_test_20405_7,20405-7,0.00,service
+odoo_test_20409_9,20409-9,0.00,service
+odoo_test_20507_0,20507-0,0.00,service
+odoo_test_2514_8,2514-8,0.00,service
+odoo_test_29610_3,29610-3,0.00,service
+odoo_test_29896_8,29896-8,0.00,service
+odoo_test_31208_2,31208-2,0.00,service
+odoo_test_48576_3,48576-3,0.00,service
+odoo_test_5370_2,5370-2,0.00,service
+odoo_test_56888_1,56888-1,0.00,service
+odoo_test_5770_3,5770-3,0.00,service
+odoo_test_5792_7,5792-7,0.00,service
+odoo_test_6420_4,6420-4,0.00,service
+odoo_test_8665_2,8665-2,0.00,service
+odoo_test_ab,AB,0.00,service
+odoo_test_adn_vih_1,ADN VIH-1,0.00,service
+odoo_test_alat_30_c,ALAT 30° C,0.00,service
+odoo_test_alat_37_c,ALAT 37° C,0.00,service
+odoo_test_arv_res,ARV res,0.00,service
+odoo_test_asat_30_c,ASAT 30° C,0.00,service
+odoo_test_asat_37_c,ASAT 37° C,0.00,service
+odoo_test_aso,ASO,0.00,service
+odoo_test_at_iii_active,AT III Active,0.00,service
+odoo_test_at_iii_dosage,AT III Dosage,0.00,service
+odoo_test_acide_nalix,Acide Nalix,0.00,service
+odoo_test_acide_ascorbique,Acide ascorbique,0.00,service
+odoo_test_acide_urique,Acide urique,0.00,service
+odoo_test_adenovirus,Adenovirus,0.00,service
+odoo_test_ag_hbs,Ag HBs,0.00,service
+odoo_test_albumine,Albumine,0.00,service
+odoo_test_amox_clavu,Amox/Clavu,0.00,service
+odoo_test_ampiciline,Ampiciline,0.00,service
+odoo_test_amylase,Amylase,0.00,service
+odoo_test_antibiogramme,Antibiogramme,0.00,service
+odoo_test_aspect,Aspect,0.00,service
+odoo_test_atypique_cell,Atypique Cell,0.00,service
+odoo_test_azithromicine,Azithromicine,0.00,service
+odoo_test_azote_ur_e,Azote Urée,0.00,service
+odoo_test_b_hcg,B-HCG,0.00,service
+odoo_test_baar_auramine,BAAR Auramine,0.00,service
+odoo_test_baar_zielh,BAAR Zielh,0.00,service
+odoo_test_be,BE,0.00,service
+odoo_test_bacilles_gram,Bacilles Gram+,0.00,service
+odoo_test_bacilles_gram,Bacilles Gram-,0.00,service
+odoo_test_bacteries,Bacteries,0.00,service
+odoo_test_baermann,Baermann,0.00,service
+odoo_test_basophiles,Basophiles,0.00,service
+odoo_test_bicarbonates,Bicarbonates,0.00,service
+odoo_test_bilidirect,BiliDirect,0.00,service
+odoo_test_biliindirect,BiliIndirect,0.00,service
+odoo_test_bilitotale,BiliTotale,0.00,service
+odoo_test_bilirubine,Bilirubine,0.00,service
+odoo_test_bioline_plasma,Bioline-Plasma,0.00,service
+odoo_test_bioline_sang_total,Bioline-Sang total,0.00,service
+odoo_test_bioline_serum,Bioline-Serum,0.00,service
+odoo_test_bordetella,Bordetella,0.00,service
+odoo_test_b_ta_hcg_24_h,Béta HCG - 24 h,0.00,service
+odoo_test_b_ta_hcg_24_h,Béta HCG – 24 h,0.00,service
+odoo_test_c3_du_complement,C3 du Complement,0.00,service
+odoo_test_c4_du_complement,C4 du complement,0.00,service
+odoo_test_ccmh,CCMH,0.00,service
+odoo_test_cd4,CD4,0.00,service
+odoo_test_cd4_abs,CD4  (Abs),0.00,service
+odoo_test_cd4_abs,CD4  Abs,0.00,service
+odoo_test_cd4,CD4 %,0.00,service
+odoo_test_cd4,CD4 (%),0.00,service
+odoo_test_cd4_en,CD4 en %,0.00,service
+odoo_test_cd4_en_mm3,CD4 en mm3,0.00,service
+odoo_test_cd4,CD4%,0.00,service
+odoo_test_cmv_ig_a,CMV Ig A,0.00,service
+odoo_test_cmv_ig_g,CMV Ig G,0.00,service
+odoo_test_cmv_ig_m,CMV Ig M,0.00,service
+odoo_test_covid_19antibodyigg_plasma,COVID-19ANTIBODYIgG(Plasma),0.00,service
+odoo_test_covid_19antibodyigg_serum,COVID-19ANTIBODYIgG(Serum),0.00,service
+odoo_test_covid_19antibodyigm_plasma,COVID-19ANTIBODYIgM(Plasma),0.00,service
+odoo_test_covid_19antibodyigm_serum,COVID-19ANTIBODYIgM(Serum),0.00,service
+odoo_test_covidpcr_fluid,COVIDPCR(Fluid),0.00,service
+odoo_test_covidpcr_respiratory_swab,COVIDPCR(Respiratory Swab),0.00,service
+odoo_test_covidpcr_sputum,COVIDPCR(Sputum),0.00,service
+odoo_test_cpk,CPK,0.00,service
+odoo_test_crp,CRP,0.00,service
+odoo_test_crp_quantitatif,CRP Quantitatif,0.00,service
+odoo_test_calcium,Calcium,0.00,service
+odoo_test_calcium_ca,Calcium (Ca++),0.00,service
+odoo_test_camp_test,Camp-test,0.00,service
+odoo_test_catalase,Catalase,0.00,service
+odoo_test_cefalotine,Cefalotine,0.00,service
+odoo_test_ceftazidime,Ceftazidime,0.00,service
+odoo_test_cell_epith,Cell Epith,0.00,service
+odoo_test_cell_vegetales,Cell Vegetales,0.00,service
+odoo_test_cetones,Cetones,0.00,service
+odoo_test_charge_virale,Charge Virale,0.00,service
+odoo_test_charge_virale_vih,Charge virale VIH,0.00,service
+odoo_test_chikungunya_test_rapide,Chikungunya Test Rapide,0.00,service
+odoo_test_chlamydia_ab,Chlamydia Ab,0.00,service
+odoo_test_chlamydia_ag,Chlamydia Ag,0.00,service
+odoo_test_chloramphenicol,Chloramphenicol,0.00,service
+odoo_test_chlore,Chlore,0.00,service
+odoo_test_chlorure,Chlorure,0.00,service
+odoo_test_chlorures,Chlorures,0.00,service
+odoo_test_chol_hdl,Chol HDL,0.00,service
+odoo_test_chol_total,Chol total,0.00,service
+odoo_test_cholera,Cholera,0.00,service
+odoo_test_cholera_rapide,Cholera Rapide,0.00,service
+odoo_test_cholesteroltot,CholesterolTot,0.00,service
+odoo_test_cholest_rol_total,Cholestérol total,0.00,service
+odoo_test_ciprofloxacine,Ciprofloxacine,0.00,service
+odoo_test_ck_total,Ck total,0.00,service
+odoo_test_ck_mb,Ck-mb,0.00,service
+odoo_test_clostridium_difficile_toxin_a_b,Clostridium Difficile Toxin A & B,0.00,service
+odoo_test_clue_cells,Clue Cells,0.00,service
+odoo_test_coag_en_tube,Coag en tube,0.00,service
+odoo_test_coagulase_libre,Coagulase libre,0.00,service
+odoo_test_cocci_gram,Cocci Gram+,0.00,service
+odoo_test_cocci_gram,Cocci Gram-,0.00,service
+odoo_test_coccobac_gram,CoccoBac Gram-,0.00,service
+odoo_test_cocobact_gram,Cocobact Gram-,0.00,service
+odoo_test_colaration_de_gram,Colaration de Gram,0.00,service
+odoo_test_colloidal_gold,Colloidal Gold,0.00,service
+odoo_test_colloidal_gold_hiv,Colloidal Gold HIV,0.00,service
+odoo_test_coloration_de_gram,Coloration de Gram,0.00,service
+odoo_test_coloration_de_kinyoun,Coloration de Kinyoun,0.00,service
+odoo_test_coloration_de_ziehl_neelsen,Coloration de Ziehl-Neelsen,0.00,service
+odoo_test_compte_spermes,Compte Spermes,0.00,service
+odoo_test_compte_des_globules_blancs,Compte des Globules Blancs,0.00,service
+odoo_test_compte_des_globules_rouges,Compte des Globules Rouges,0.00,service
+odoo_test_consistance,Consistance,0.00,service
+odoo_test_coombs_direct,Coombs Direct,0.00,service
+odoo_test_coombs_indirect,Coombs Indirect,0.00,service
+odoo_test_coproculture,Coproculture,0.00,service
+odoo_test_couleur,Couleur,0.00,service
+odoo_test_creatinine,Creatinine,0.00,service
+odoo_test_criptococcus_test_rapide,Criptococcus test rapide,0.00,service
+odoo_test_cristal_cholest,Cristal Cholest,0.00,service
+odoo_test_cristal_urate,Cristal Urate,0.00,service
+odoo_test_cristaux,Cristaux,0.00,service
+odoo_test_crypto_zielh,Crypto Zielh,0.00,service
+odoo_test_cryptococcal_ag,Cryptococcal Ag,0.00,service
+odoo_test_cr_atinine,Créatinine,0.00,service
+odoo_test_cult_milieu_liqu,Cult milieu Liqu,0.00,service
+odoo_test_culture,Culture,0.00,service
+odoo_test_culture_bk,Culture BK,0.00,service
+odoo_test_culture_bacterienne,Culture Bacterienne,0.00,service
+odoo_test_culture_de_mycobacteries_liquide,Culture de mycobacteries liquide,0.00,service
+odoo_test_culture_de_mycobacteries_solide,Culture de mycobacteries solide,0.00,service
+odoo_test_cylindres,Cylindres,0.00,service
+odoo_test_denguepcr_dbs,DENGUEPCR(DBS),0.00,service
+odoo_test_denguepcr_plasma,DENGUEPCR(Plasma),0.00,service
+odoo_test_denguepcr_serum,DENGUEPCR(Serum),0.00,service
+odoo_test_dna_pcr,DNA PCR,0.00,service
+odoo_test_dnase,DNAse,0.00,service
+odoo_test_date_de_mise_sous_arv,Date de mise sous ARV,0.00,service
+odoo_test_dengue,Dengue,0.00,service
+odoo_test_dengue_ig_a,Dengue Ig A,0.00,service
+odoo_test_dengue_ig_g,Dengue Ig G,0.00,service
+odoo_test_dengue_ns1_ag,Dengue NS1 Ag,0.00,service
+odoo_test_dengue_ns1ag,Dengue NS1Ag,0.00,service
+odoo_test_densite,Densite,0.00,service
+odoo_test_determine,Determine,0.00,service
+odoo_test_determine_vih,Determine VIH,0.00,service
+odoo_test_diphterie,Diphterie,0.00,service
+odoo_test_duengue,Duengue,0.00,service
+odoo_test_echantillon,Echantillon,0.00,service
+odoo_test_electrophor_hb,Electrophor Hb,0.00,service
+odoo_test_elisa,Elisa,0.00,service
+odoo_test_elisa_vih,Elisa VIH,0.00,service
+odoo_test_eosinophile,Eosinophile,0.00,service
+odoo_test_eosinophiles,Eosinophiles,0.00,service
+odoo_test_examen_microscopique_apres_concentration,Examen Microscopique apres concentration,0.00,service
+odoo_test_examen_microscopique_direct,Examen Microscopique direct,0.00,service
+odoo_test_examen_direct,Examen direct,0.00,service
+odoo_test_examen_microscopique_apres_concentration,Examen microscopique apres concentration,0.00,service
+odoo_test_examen_microscopique_direct,Examen microscopique direct,0.00,service
+odoo_test_expectoauramine,ExpectoAURAMINE,0.00,service
+odoo_test_expectozielh,ExpectoZIELH,0.00,service
+odoo_test_extradiplogram,ExtraDiploGram-,0.00,service
+odoo_test_flu,FLU,0.00,service
+odoo_test_fsh,FSH,0.00,service
+odoo_test_facteur_ix,Facteur IX,0.00,service
+odoo_test_facteur_rhumatoide,Facteur Rhumatoide,0.00,service
+odoo_test_facteur_viii,Facteur VIII,0.00,service
+odoo_test_fer_serique,Fer Serique,0.00,service
+odoo_test_fibrinogene,Fibrinogene,0.00,service
+odoo_test_formes_anormales,Formes anormales,0.00,service
+odoo_test_formes_normales,Formes normales,0.00,service
+odoo_test_frot_ureth_gram,Frot Ureth Gram,0.00,service
+odoo_test_frot_vaggram,Frot VagGram,0.00,service
+odoo_test_fructose,Fructose,0.00,service
+odoo_test_gb,GB,0.00,service
+odoo_test_gpp,GPP,0.00,service
+odoo_test_gr,GR,0.00,service
+odoo_test_gram,GRAM,0.00,service
+odoo_test_gram_ascites,GRAM Ascites,0.00,service
+odoo_test_gastroenteric_pathogens,Gastroenteric Pathogens,0.00,service
+odoo_test_genie_ii,Genie II,0.00,service
+odoo_test_genie_ii_10,Genie II 10,0.00,service
+odoo_test_genie_ii_100,Genie II 100,0.00,service
+odoo_test_genie_iii_plasma,Genie III-Plasma,0.00,service
+odoo_test_genie_iii_sang_t,Genie III-Sang t,0.00,service
+odoo_test_genie_iii_serum,Genie III-Serum,0.00,service
+odoo_test_gentamycine,Gentamycine,0.00,service
+odoo_test_glucose,Glucose,0.00,service
+odoo_test_gly,Gly,0.00,service
+odoo_test_glycemie,Glycemie,0.00,service
+odoo_test_glycemie_fasting,Glycemie Fasting,0.00,service
+odoo_test_glycemie_fastning,Glycemie Fastning,0.00,service
+odoo_test_glyc_mie,Glycémie,0.00,service
+odoo_test_glyc_mie_provoquee_1_2_hre,Glycémie provoquee 1/2 hre,0.00,service
+odoo_test_glyc_mie_provoquee_1hre,Glycémie provoquee 1hre,0.00,service
+odoo_test_glyc_mie_provoquee_2hres,Glycémie provoquee 2hres,0.00,service
+odoo_test_glyc_mie_provoquee_3_hres,Glycémie provoquee 3 hres,0.00,service
+odoo_test_glyc_mie_provoquee_4_hres,Glycémie provoquee 4 hres,0.00,service
+odoo_test_gram,Gram,0.00,service
+odoo_test_gramm,Gramm,0.00,service
+odoo_test_groupe_abo,Groupe ABO,0.00,service
+odoo_test_groupe_rhesus,Groupe Rhesus,0.00,service
+odoo_test_h_pilori,H Pilori,0.00,service
+odoo_test_h_influenzae,H. influenzae,0.00,service
+odoo_test_hbsag_igg,HBsAg - IgG,0.00,service
+odoo_test_hbsag_igg,HBsAg IGG,0.00,service
+odoo_test_hco3,HCO3,0.00,service
+odoo_test_hcv_h_patite_c,HCV - Hépatite C,0.00,service
+odoo_test_hcv_igg,HCV IGG,0.00,service
+odoo_test_hcv_igm,HCV IGM,0.00,service
+odoo_test_hdl,HDL,0.00,service
+odoo_test_hdl_cholest_rol,HDL-cholestérol,0.00,service
+odoo_test_hepatitisbviralload_plasma,HEPATITISBVIRALLOAD(Plasma),0.00,service
+odoo_test_hepatitisbviralload_serum,HEPATITISBVIRALLOAD(Serum),0.00,service
+odoo_test_hepatitiscviralload_plasma,HEPATITISCVIRALLOAD(Plasma),0.00,service
+odoo_test_hepatitiscviralload_serum,HEPATITISCVIRALLOAD(Serum),0.00,service
+odoo_test_hiv_blot,HIV Blot,0.00,service
+odoo_test_hiv_elisa,HIV Elisa,0.00,service
+odoo_test_hiv_pcr,HIV PCR,0.00,service
+odoo_test_hiv_western_blot,HIV Western Blot,0.00,service
+odoo_test_hiv_test_rapide,HIV test rapide,0.00,service
+odoo_test_hivinfantviralload_dbs,HIVINFANTVIRALLOAD(DBS),0.00,service
+odoo_test_hivinfantviralload_plasma,HIVINFANTVIRALLOAD(Plasma),0.00,service
+odoo_test_hivinfantviralload_serum,HIVINFANTVIRALLOAD(Serum),0.00,service
+odoo_test_hivviralload_dbs,HIVVIRALLOAD(DBS),0.00,service
+odoo_test_hivviralload_plasma,HIVVIRALLOAD(Plasma),0.00,service
+odoo_test_hivviralload_serum,HIVVIRALLOAD(Serum),0.00,service
+odoo_test_htlv_i_et_ii,HTLV I et II,0.00,service
+odoo_test_hb,Hb,0.00,service
+odoo_test_hbglyque,HbGlyque,0.00,service
+odoo_test_hematies,Hematies,0.00,service
+odoo_test_hematocrite,Hematocrite,0.00,service
+...
+(and more) 
