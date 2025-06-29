@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   certs:
     container_name: oe-certs
@@ -42,6 +40,7 @@ services:
     depends_on:
       - database
       - certs
+      - odoo.openelis.org
     ports:
       - "8080:8080"
       - "8443:8443"
@@ -53,8 +52,8 @@ services:
     environment:
       - DEFAULT_PW=adminADMIN!
       - TZ=Africa/Nairobi
-      # context.xml doesn't seem to be able to pick up environment variables directly, so we are passing them in as CATALINA_OPTS
       - CATALINA_OPTS= -Ddatasource.url=jdbc:postgresql://database:5432/clinlims -Ddatasource.username=clinlims -Ddatasource.password=clinlims
+      - ODOO_MAPPING_FILE=/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
     volumes:
       -  key_trust-store-volume:/etc/openelis-global
       -  lucene_index-vol:/var/lib/lucene_index
@@ -64,8 +63,8 @@ services:
       - ./configs/openelis/tomcat/oe_server.xml:/usr/local/tomcat/conf/server.xml
       - ./configs/openelis/war/OpenELIS-Global.war:/usr/local/tomcat/webapps/OpenELIS-Global.war
       - ./configs/openelis/properties/SystemConfiguration.properties:/var/lib/openelis-global/properties/SystemConfiguration.properties
-      - ./configs/openelis/properties/odoo-test-product-mapping.properties:/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
       - ./configs/openelis/test-map/test-loinc-map.csv:/var/lib/openelis-global/plugin-test-mappings/test-loinc-map.csv
+      - ./configs/openelis/properties/odoo-test-product-mapping.properties:/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
     secrets:
       - source: datasource.password
       - source: common.properties
@@ -121,7 +120,13 @@ services:
     depends_on:
       - certs
 
-  odoo:
+  odoo.openelis.org:
+    container_name: odoo.openelis.org
+    # Use the official Odoo image or a custom one if you have specific requirements
+    # If you have a custom image, replace 'mekomsolutions/odoo' with your image name
+    # For example, if you have built a custom image, it might look like 'my-odoo-image:latest'
+    # If you are using a custom image, ensure it has the necessary addons and configurations
+    # If you are using a custom image, ensure it has the necessary addons and configurations 
     image: mekomsolutions/odoo
     depends_on:
       - odoo-db
@@ -136,14 +141,15 @@ services:
       - INITIALIZER_CONFIG_FILE_PATH=/mnt/odoo_config/initializer_config.json
     volumes:
       - ./odoo/addons:/mnt/extra-addons
-      - ./odoo/initializer_config:/mnt/odoo_config
+      - ./configs/odoo/initializer_config:/mnt/odoo_config
       - odoo-data:/var/lib/odoo
-      - ./odoo/config/odoo.conf:/etc/odoo/odoo.conf
+      - ./configs/odoo/config:/etc/odoo
     networks:
       - hie
     restart: unless-stopped
 
   odoo-db:
+    container_name: odoo-db
     image: postgres:13
     environment:
       - POSTGRES_DB=odoo
@@ -162,6 +168,8 @@ secrets:
       file: ./configs/openelis/properties/common.properties
     hapi_application.yaml:
       file: ./configs/openelis/properties/hapi_application.yaml
+    odoo-test-product-mapping.properties:
+      file: ./configs/openelis/properties/odoo-test-product-mapping.properties
 
 networks:
   hie:
