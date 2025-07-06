@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.openelis</groupId>
+    <artifactId>odoo-openelis-connector</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Odoo OpenELIS Connector</name>
+    <description>Integration between Odoo and OpenELIS systems</description>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
+        <!-- Odoo Initializer Configuration -->
+        <odooInitializerArtifactId>odoo-initializer</odooInitializerArtifactId>
+        <odooInitializerVersion>2.3.0-SNAPSHOT</odooInitializerVersion>
+        <odooInitializerGroupId>net.mekomsolutions.odoo</odooInitializerGroupId>
+    </properties>
+
+    <dependencies>
+        <!-- Odoo Initializer Addon -->
+        <dependency>
+            <groupId>${odooInitializerGroupId}</groupId>
+            <artifactId>${odooInitializerArtifactId}</artifactId>
+            <version>${odooInitializerVersion}</version>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Dependency Plugin to extract Odoo Initializer -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.6.1</version>
+                <executions>
+                    <execution>
+                        <id>unpack-odoo-initializer</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <excludeTransitive>true</excludeTransitive>
+                            <outputDirectory>${project.basedir}/configs/odoo/addons</outputDirectory>
+                            <includeArtifactIds>${odooInitializerArtifactId}</includeArtifactIds>
+                            <stripVersion>true</stripVersion>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Maven Clean Plugin to clean extracted files -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.basedir}/configs/odoo/addons</directory>
+                            <includes>
+                                <include>odoo_initializer/**</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Repository for Mekom Solutions artifacts -->
+    <repositories>
+        <repository>
+            <id>mekom-solutions</id>
+            <name>Mekom Solutions Repository</name>
+            <url>https://maven.mekomsolutions.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>

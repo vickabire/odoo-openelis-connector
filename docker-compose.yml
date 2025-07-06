@@ -120,18 +120,24 @@ services:
     depends_on:
       - certs
 
+  # odoo-setup:
+  #   container_name: odoo-setup
+  #   image: maven:3.9-eclipse-temurin-8
+  #   volumes:
+  #     - .:/workspace
+  #   working_dir: /workspace
+  #   command: mvn clean generate-resources
+  #   profiles:
+  #     - setup
+
   odoo.openelis.org:
     container_name: odoo.openelis.org
-    # Use the official Odoo image or a custom one if you have specific requirements
-    # If you have a custom image, replace 'mekomsolutions/odoo' with your image name
-    # For example, if you have built a custom image, it might look like 'my-odoo-image:latest'
-    # If you are using a custom image, ensure it has the necessary addons and configurations
-    # If you are using a custom image, ensure it has the necessary addons and configurations 
-    image: mekomsolutions/odoo
+    image: odoo:17
     depends_on:
       - odoo-db
     ports:
       - "8069:8069"
+      - "8072:8072"
     environment:
       - HOST=odoo-db
       - USER=odoo
@@ -140,10 +146,11 @@ services:
       - INITIALIZER_DATA_FILES_PATH=/mnt/odoo_config
       - INITIALIZER_CONFIG_FILE_PATH=/mnt/odoo_config/initializer_config.json
     volumes:
-      - ./odoo/addons:/mnt/extra-addons
+      - ./configs/odoo/addons:/mnt/extra-addons
       - ./configs/odoo/initializer_config:/mnt/odoo_config
-      - odoo-data:/var/lib/odoo
+      - odoo-openelis-data:/var/lib/odoo
       - ./configs/odoo/config:/etc/odoo
+    command: odoo -d odoo_openelis_db -i base,sale_management,stock,account_account,odoo_initializer --db_user=odoo --db_password=odoo --db_host=odoo-db
     networks:
       - hie
     restart: unless-stopped
@@ -156,7 +163,7 @@ services:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
     volumes:
-      - odoo-db-data:/var/lib/postgresql/data
+      - odoo-openelis-db-data:/var/lib/postgresql/data
     networks:
       - hie
     restart: unless-stopped
@@ -185,5 +192,5 @@ volumes:
   certs:
   keys-vol:
   lucene_index-vol:
-  odoo-data:
-  odoo-db-data:
+  odoo-openelis-data:
+  odoo-openelis-db-data:

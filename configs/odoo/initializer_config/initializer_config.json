@@ -1,7 +1,12 @@
 [
   {
+    "name": "product_category",
+    "model": "product.category",
+    "file": "product_category/product.category.csv"
+  },
+  {
     "name": "product",
-    "model": "product.product",
-    "file": "product/products.csv"
+    "model": "product.template",
+    "file": "product/product.template.csv"
   }
 ]
