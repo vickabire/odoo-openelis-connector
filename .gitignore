@@ -8,3 +8,10 @@ configs/openelis/war/
 *.log
 configs/openelis/logs/
 logs/
+.DS_Store
+configs/.DS_Store
+configs/odoo/.DS_Store
+
+# Maven generated files
+target/
+configs/odoo/addons/odoo_initializer/
