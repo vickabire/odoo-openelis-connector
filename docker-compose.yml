@@ -39,7 +39,7 @@ services:
     image: itechuw/openelis-global-2-dev:develop
     depends_on:
       odoo.openelis.org:
-        condition: service_healthy
+        condition: service_started
       database:
         condition: service_healthy
       certs:
@@ -60,6 +60,7 @@ services:
     volumes:
       -  key_trust-store-volume:/etc/openelis-global
       -  lucene_index-vol:/var/lib/lucene_index
+      - ./tools/dockerize:/dockerize:ro
       - ./configs/openelis/plugins/:/var/lib/openelis-global/plugins
       - ./configs/openelis/logs/oeLogs:/var/lib/openelis-global/logs
       - ./configs/openelis/logs/tomcatLogs/:/usr/local/tomcat/logs
@@ -137,15 +138,15 @@ services:
     container_name: odoo.openelis.org
     image: odoo:17
     depends_on:
-      - odoo-db
+      - db
     ports:
       - "8069:8069"
       - "8072:8072"
     environment:
-      - HOST=odoo-db
-      - USER=odoo
-      - PASSWORD=odoo
-      # - ADDONS=odoo_initializer,sale_management,stock,account_account
+      # - HOST=odoo-db
+      # - USER=odoo
+      # - PASSWORD=odoo
+      # - ADDONS=sale_management,stock,account_account,purchase,mrp,odoo_initializer,ozone_settings,mrp_product_expiry,product_expiry,l10n_generic_coa
       - INITIALIZER_DATA_FILES_PATH=/mnt/odoo_config
       - INITIALIZER_CONFIG_FILE_PATH=/mnt/odoo_config/initializer_config.json
     volumes:
@@ -154,27 +155,27 @@ services:
       - odoo-openelis-data:/var/lib/odoo
       - ./configs/odoo/config:/etc/odoo
     command: >
-      odoo -d odoo_openelis_db
-      -i base,base_import,sale_management,stock,account_account,odoo_initializer
+      odoo -d postgres
+      -i base,base_import,sale_management,stock,account_account,purchase,mrp,odoo_initializer,ozone_settings,mrp_product_expiry,product_expiry,l10n_generic_coa
       --db_user=odoo
       --db_password=odoo
-      --db_host=odoo-db
+      --db_host=db
     networks:
       - hie
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8069 || exit 1"]
       interval: 10s
       timeout: 5s
-      retries: 10
+      retries: 15
     restart: unless-stopped
 
-  odoo-db:
-    container_name: odoo-db
+  db:
+    container_name: odoo.db.openelis.org
     image: postgres:13
     environment:
-      - POSTGRES_DB=odoo_openelis_db
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
+      - POSTGRES_DB=postgres
     volumes:
       - odoo-openelis-db-data:/var/lib/postgresql/data
     networks:
