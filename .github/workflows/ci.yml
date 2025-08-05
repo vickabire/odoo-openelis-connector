@@ -18,13 +18,15 @@ jobs:
       with:
         java-version: '8'
         distribution: 'temurin'
-    
-    - name: Set up Maven
-      uses: actions/setup-java@v4
-      with:
-        java-version: '8'
-        distribution: 'temurin'
         cache: 'maven'
+    
+    - name: Install Docker
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y docker.io docker-compose
+        sudo systemctl start docker
+        sudo systemctl enable docker
+        sudo usermod -aG docker $USER
     
     - name: Extract Odoo Initializer
       run: mvn clean generate-resources
@@ -37,21 +39,19 @@ jobs:
         fi
         echo "odoo-initializer extracted successfully"
     
-    - name: Start Docker services
+    - name: Start Database
       run: |
-        docker-compose up -d odoo-db
-        sleep 10  # Wait for database to be ready
+        docker-compose up -d db
+        timeout 60 bash -c 'until docker-compose exec -T db pg_isready -U odoo; do sleep 2; done'
     
     - name: Test Odoo Initializer
       run: |
         docker-compose up -d odoo.openelis.org
-        sleep 30  # Wait for Odoo to start
+        timeout 120 bash -c 'until curl -f http://localhost:8069/web/database/selector; do sleep 5; done'
         
-        # Check if Odoo is responding
-        curl -f http://localhost:8069/web/database/selector || exit 1
-        
-        # Check logs for initializer
         docker-compose logs odoo.openelis.org | grep -i "initializer" || echo "No initializer logs found"
+        
+        curl -f http://localhost:8069/web/database/selector || exit 1
     
     - name: Cleanup
       if: always()
@@ -73,15 +73,17 @@ jobs:
     
     - name: Build and Package
       run: |
-        # Extract odoo-initializer
         mvn clean generate-resources
-        
-        # Build the project
         mvn clean package
         
-        # Create deployment package
         tar -czf odoo-openelis-connector.tar.gz \
           configs/ \
           docker-compose.yml \
-          scripts/ \
-          README.md 
+          README.md \
+          pom.xml
+    
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: odoo-openelis-connector
+        path: odoo-openelis-connector.tar.gz 
