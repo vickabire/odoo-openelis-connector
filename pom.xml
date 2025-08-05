@@ -25,12 +25,13 @@
     </properties>
 
     <dependencies>
-        <!-- Odoo Initializer Addon -->
+        <!-- Odoo Initializer Addon - Optional dependency -->
         <dependency>
             <groupId>${odooInitializerGroupId}</groupId>
             <artifactId>${odooInitializerArtifactId}</artifactId>
             <version>${odooInitializerVersion}</version>
             <type>zip</type>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
@@ -53,6 +54,7 @@
                             <outputDirectory>${project.basedir}/configs/odoo/addons</outputDirectory>
                             <includeArtifactIds>${odooInitializerArtifactId}</includeArtifactIds>
                             <stripVersion>true</stripVersion>
+                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
                         </configuration>
                     </execution>
                 </executions>
