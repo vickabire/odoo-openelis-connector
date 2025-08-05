@@ -33,11 +33,6 @@ jobs:
     - name: Verify Odoo Initializer
       run: |
         if [ ! -d "configs/odoo/addons/odoo_initializer" ]; then
-          echo "odoo-initializer not found, attempting to extract..."
-          mvn clean generate-resources || echo "Maven extraction failed, but continuing..."
-        fi
-        
-        if [ ! -d "configs/odoo/addons/odoo_initializer" ]; then
           echo "odoo-initializer not available"
           exit 1
         fi
@@ -77,9 +72,6 @@ jobs:
     
     - name: Build and Package
       run: |
-        mvn clean generate-resources || echo "Maven extraction failed, but continuing..."
-        mvn clean package || echo "Maven package failed, but continuing..."
-        
         tar -czf odoo-openelis-connector.tar.gz \
           configs/ \
           docker-compose.yml \

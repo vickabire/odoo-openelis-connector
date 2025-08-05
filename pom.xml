@@ -25,41 +25,11 @@
     </properties>
 
     <dependencies>
-        <!-- Odoo Initializer Addon - Optional dependency -->
-        <dependency>
-            <groupId>${odooInitializerGroupId}</groupId>
-            <artifactId>${odooInitializerArtifactId}</artifactId>
-            <version>${odooInitializerVersion}</version>
-            <type>zip</type>
-            <optional>true</optional>
-        </dependency>
+        <!-- Odoo Initializer Addon - Files are already present in configs/odoo/addons/odoo_initializer -->
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Maven Dependency Plugin to extract Odoo Initializer -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.6.1</version>
-                <executions>
-                    <execution>
-                        <id>unpack-odoo-initializer</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>unpack-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <excludeTransitive>true</excludeTransitive>
-                            <outputDirectory>${project.basedir}/configs/odoo/addons</outputDirectory>
-                            <includeArtifactIds>${odooInitializerArtifactId}</includeArtifactIds>
-                            <stripVersion>true</stripVersion>
-                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
             <!-- Maven Clean Plugin to clean extracted files -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
