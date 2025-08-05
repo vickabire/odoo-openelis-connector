@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ master, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   test:
@@ -18,44 +18,43 @@ jobs:
       with:
         java-version: '8'
         distribution: 'temurin'
-    
-    - name: Set up Maven
-      uses: actions/setup-java@v4
-      with:
-        java-version: '8'
-        distribution: 'temurin'
         cache: 'maven'
     
-    - name: Extract Odoo Initializer
-      run: mvn clean generate-resources
+    - name: Setup Docker
+      run: |
+        if ! command -v docker &> /dev/null; then
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+          sudo systemctl start docker
+          sudo systemctl enable docker
+        fi
+        sudo usermod -aG docker $USER
     
-    - name: Verify Extraction
+    - name: Verify Odoo Initializer
       run: |
         if [ ! -d "configs/odoo/addons/odoo_initializer" ]; then
-          echo "odoo-initializer extraction failed"
+          echo "odoo-initializer not available"
           exit 1
         fi
-        echo "odoo-initializer extracted successfully"
+        echo "odoo-initializer verified successfully"
     
-    - name: Start Docker services
+    - name: Start Database
       run: |
-        docker-compose up -d odoo-db
-        sleep 10  # Wait for database to be ready
+        docker compose up -d database
+        timeout 60 bash -c 'until docker compose exec -T database pg_isready -U clinlims; do sleep 2; done'
     
     - name: Test Odoo Initializer
       run: |
-        docker-compose up -d odoo.openelis.org
-        sleep 30  # Wait for Odoo to start
+        docker compose up -d odoo.openelis.org
+        timeout 120 bash -c 'until curl -f http://localhost:8069/web/database/selector; do sleep 5; done'
         
-        # Check if Odoo is responding
+        docker compose logs odoo.openelis.org | grep -i "initializer" || echo "No initializer logs found"
+        
         curl -f http://localhost:8069/web/database/selector || exit 1
-        
-        # Check logs for initializer
-        docker-compose logs odoo.openelis.org | grep -i "initializer" || echo "No initializer logs found"
     
     - name: Cleanup
       if: always()
-      run: docker-compose down -v
+      run: docker compose down -v
 
   build:
     runs-on: ubuntu-latest
@@ -73,15 +72,14 @@ jobs:
     
     - name: Build and Package
       run: |
-        # Extract odoo-initializer
-        mvn clean generate-resources
-        
-        # Build the project
-        mvn clean package
-        
-        # Create deployment package
         tar -czf odoo-openelis-connector.tar.gz \
           configs/ \
           docker-compose.yml \
-          scripts/ \
-          README.md 
+          README.md \
+          pom.xml
+    
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: odoo-openelis-connector
+        path: odoo-openelis-connector.tar.gz 
