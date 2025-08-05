@@ -1,4 +1,5 @@
 .idea/
+.vscode/
 
 # War files
 *.war
@@ -14,4 +15,3 @@ configs/odoo/.DS_Store
 
 # Maven generated files
 target/
-configs/odoo/addons/odoo_initializer/
