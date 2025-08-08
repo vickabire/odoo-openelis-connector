@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up JDK 8
+      uses: actions/setup-java@v4
+      with:
+        java-version: '8'
+        distribution: 'temurin'
+        cache: 'maven'
+    
+    - name: Build Release Distribution
+      run: |
+        mvn clean package
+        echo "Release distribution built successfully"
+    
+    - name: Verify Release Artifacts
+      run: |
+        ls -la target/
+        if [ ! -f "target/odoo-openelis-connector-1.0.0-SNAPSHOT.tar.gz" ]; then
+          echo "Release TAR not found"
+          exit 1
+        fi
+        if [ ! -f "target/odoo-openelis-connector-1.0.0-SNAPSHOT.zip" ]; then
+          echo "Release ZIP not found"
+          exit 1
+        fi
+        echo "Release artifacts verified successfully"
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          target/odoo-openelis-connector-1.0.0-SNAPSHOT.tar.gz
+          target/odoo-openelis-connector-1.0.0-SNAPSHOT.zip
+        draft: false
+        prerelease: false
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -3,6 +3,10 @@ target/
 *.tar.gz
 *.zip
 
+# WAR files (build artifacts)
+*.war
+configs/openelis/war/
+
 # Odoo addons directory (managed by Maven dependencies)
 configs/odoo/addons/
 

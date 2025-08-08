@@ -198,6 +198,32 @@ To update the Odoo initializer version:
 1. Update the `odooInitializerVersion` property in `pom.xml`
 2. Run `mvn clean package` to rebuild with the new version
 
+### CI/CD Pipeline
+
+The project includes a comprehensive CI/CD pipeline with the following workflows:
+
+- **Main CI/CD Pipeline**: Core testing and building
+- **Quality Checks**: Code quality and security scanning
+- **Release Pipeline**: Automated GitHub releases
+
+For detailed information, see [CI.md](CI.md).
+
+#### Local Quality Checks
+
+```bash
+# Validate Maven project
+mvn validate
+
+# Analyze dependencies
+mvn dependency:analyze
+
+# Security vulnerability scan
+mvn org.owasp:dependency-check-maven:check
+
+# Build distribution
+mvn clean package
+```
+
 ## Troubleshooting
 
 ### Network Issues with Remote Repository
