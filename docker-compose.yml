@@ -165,9 +165,9 @@ services:
       - hie
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8069 || exit 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 15
+      interval: 30s
+      timeout: 10s
+      retries: 20
     restart: unless-stopped
 
   db:
@@ -183,8 +183,8 @@ services:
       - hie
     restart: unless-stopped
 
-  odoo-init:
-    container_name: odoo-initializer
+  odoo.initializer.openelis.org:
+    container_name: odoo.initializer.openelis.org
     image: odoo:17
     depends_on:
       odoo.openelis.org:
