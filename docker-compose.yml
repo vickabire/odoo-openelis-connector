@@ -156,7 +156,7 @@ services:
       - ./configs/odoo/config:/etc/odoo
     command: >
       odoo -d postgres
-      -i base,base_import,sale_management,stock,account_account,purchase,mrp,odoo_initializer,ozone_settings,mrp_product_expiry,product_expiry,l10n_generic_coa
+      -i base,base_import,sale_management,stock,account_account,purchase,mrp,odoo_initializer,mrp_product_expiry,product_expiry,l10n_generic_coa
       --db_user=odoo
       --db_password=odoo
       --db_host=db
