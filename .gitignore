@@ -1,17 +1,25 @@
-.idea/
-.vscode/
-
-# War files
-*.war
-configs/openelis/war/
-
-# Log files and directories
-*.log
-configs/openelis/logs/
-logs/
-.DS_Store
-configs/.DS_Store
-configs/odoo/.DS_Store
-
-# Maven generated files
+# Maven build artifacts
 target/
+*.tar.gz
+*.zip
+
+# Odoo addons directory (managed by Maven dependencies)
+configs/odoo/addons/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Docker volumes
+docker-volumes/

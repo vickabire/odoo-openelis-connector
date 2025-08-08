@@ -25,11 +25,97 @@
     </properties>
 
     <dependencies>
-        <!-- Odoo Initializer Addon - Files are already present in configs/odoo/addons/odoo_initializer -->
+        <!-- Odoo Initializer Addon -->
+        <dependency>
+            <groupId>${odooInitializerGroupId}</groupId>
+            <artifactId>${odooInitializerArtifactId}</artifactId>
+            <version>${odooInitializerVersion}</version>
+            <type>zip</type>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <!-- Maven Dependency Plugin to extract Odoo Initializer addon -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.6.1</version>
+                <executions>
+                    <execution>
+                        <id>Copy Odoo Initializer add-on</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <excludeTransitive>true</excludeTransitive>
+                            <outputDirectory>
+                                ${project.build.directory}/${project.artifactId}-${project.version}/configs/odoo/addons
+                            </outputDirectory>
+                            <includeArtifactIds>${odooInitializerArtifactId}</includeArtifactIds>
+                            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Maven Resources Plugin to copy local configs -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <!-- Copy local configs/ folder (excluding odoo/addons since it's managed by dependency plugin) -->
+                    <execution>
+                        <id>Copy local configs/ resources</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.directory}/${project.artifactId}-${project.version}/configs
+                            </outputDirectory>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/configs</directory>
+                                    <excludes>
+                                        <!-- Exclude odoo/addons since it's managed by dependency plugin -->
+                                        <exclude>odoo/addons/</exclude>
+                                    </excludes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    
+                    <!-- Copy local Odoo initializer as fallback when dependency is not available -->
+                    <execution>
+                        <id>Copy local Odoo initializer fallback</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.directory}/${project.artifactId}-${project.version}/configs/odoo/addons
+                            </outputDirectory>
+                            <overwrite>false</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/configs/odoo/addons</directory>
+                                    <includes>
+                                        <include>odoo_initializer/**</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- Maven Clean Plugin to clean extracted files -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -38,13 +124,35 @@
                 <configuration>
                     <filesets>
                         <fileset>
-                            <directory>${project.basedir}/configs/odoo/addons</directory>
+                            <directory>${project.build.directory}</directory>
                             <includes>
-                                <include>odoo_initializer/**</include>
+                                <include>**/odoo_initializer/**</include>
                             </includes>
                         </fileset>
                     </filesets>
                 </configuration>
+            </plugin>
+
+            <!-- Maven Assembly Plugin to package the distribution -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version>
+                <executions>
+                    <execution>
+                        <id>Package distribution</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>
+                                <descriptor>assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
