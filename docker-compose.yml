@@ -149,6 +149,7 @@ services:
       # - ADDONS=sale_management,stock,account_account,purchase,mrp,odoo_initializer,ozone_settings,mrp_product_expiry,product_expiry,l10n_generic_coa
       - INITIALIZER_DATA_FILES_PATH=/mnt/odoo_config
       - INITIALIZER_CONFIG_FILE_PATH=/mnt/odoo_config/initializer_config.json
+      - INITIALIZER_CHECKSUMS_PATH=/var/lib/odoo/checksums
     volumes:
       - ./configs/odoo/addons:/mnt/extra-addons
       - ./configs/odoo/initializer_config:/mnt/odoo_config
@@ -181,6 +182,30 @@ services:
     networks:
       - hie
     restart: unless-stopped
+
+  odoo-init:
+    container_name: odoo-initializer
+    image: odoo:17
+    depends_on:
+      odoo.openelis.org:
+        condition: service_healthy
+    volumes:
+      - ./configs/odoo/addons:/mnt/extra-addons
+      - ./configs/odoo/initializer_config:/mnt/odoo_config
+      - odoo-openelis-data:/var/lib/odoo
+      - ./configs/odoo/config:/etc/odoo
+      - ./test_initializer_fixed.py:/tmp/test_initializer_fixed.py
+    command: >
+      sh -c "
+      echo 'Waiting for Odoo to be ready...' &&
+      sleep 60 &&
+      echo 'Running initializer...' &&
+      python3 /tmp/test_initializer_fixed.py &&
+      echo 'Initialization completed!'
+      "
+    networks:
+      - hie
+    restart: "no"
 
 secrets:
     datasource.password:

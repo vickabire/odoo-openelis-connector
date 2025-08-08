@@ -155,6 +155,46 @@
         </plugins>
     </build>
 
+    <profiles>
+        <!-- Profile to run Odoo initializer after setup -->
+        <profile>
+            <id>run-initializer</id>
+            <activation>
+                <property>
+                    <name>run.initializer</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <!-- Exec Maven Plugin to run the initializer script -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <executions>
+                            <execution>
+                                <id>run-odoo-initializer</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>docker-compose</executable>
+                                    <arguments>
+                                        <argument>up</argument>
+                                        <argument>-d</argument>
+                                        <argument>odo-init</argument>
+                                    </arguments>
+                                    <workingDirectory>${project.basedir}</workingDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <!-- Repository for Mekom Solutions artifacts -->
     <repositories>
         <repository>
