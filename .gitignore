@@ -12,10 +12,13 @@ configs/odoo/addons/
 
 # IDE files
 .idea/
+**/.idea/
 *.iml
 .vscode/
+**/.vscode/
 *.swp
 *.swo
+*.sublime-*
 
 # OS files
 .DS_Store
