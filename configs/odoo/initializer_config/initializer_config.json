@@ -1,14 +1,14 @@
 {
   "models": [
     {
-      "name": "product_category",
-      "model": "product.category",
-      "file": "product_category/product.category.csv"
+      "model_name": "product.category",
+      "folder": "product_category",
+      "field_rules": {}
     },
     {
-      "name": "product",
-      "model": "product.template",
-      "file": "product/product.template.csv"
+      "model_name": "product.template",
+      "folder": "product",
+      "field_rules": {}
     }
   ]
 }
