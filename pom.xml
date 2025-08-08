@@ -51,9 +51,7 @@
                         </goals>
                         <configuration>
                             <excludeTransitive>true</excludeTransitive>
-                            <outputDirectory>
-                                ${project.build.directory}/${project.artifactId}-${project.version}/configs/odoo/addons
-                            </outputDirectory>
+                            <outputDirectory>${project.build.directory}/${project.artifactId}-${project.version}/configs/odoo/addons</outputDirectory>
                             <includeArtifactIds>${odooInitializerArtifactId}</includeArtifactIds>
                             <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
                         </configuration>
@@ -75,9 +73,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>
-                                ${project.build.directory}/${project.artifactId}-${project.version}/configs
-                            </outputDirectory>
+                            <outputDirectory>${project.build.directory}/${project.artifactId}-${project.version}/configs</outputDirectory>
                             <overwrite>true</overwrite>
                             <resources>
                                 <resource>
