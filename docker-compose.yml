@@ -124,16 +124,6 @@ services:
     depends_on:
       - certs
 
-  # odoo-setup:
-  #   container_name: odoo-setup
-  #   image: maven:3.9-eclipse-temurin-8
-  #   volumes:
-  #     - .:/workspace
-  #   working_dir: /workspace
-  #   command: mvn clean generate-resources
-  #   profiles:
-  #     - setup
-
   odoo.openelis.org:
     container_name: odoo.openelis.org
     image: odoo:17
@@ -143,10 +133,6 @@ services:
       - "8069:8069"
       - "8072:8072"
     environment:
-      # - HOST=odoo-db
-      # - USER=odoo
-      # - PASSWORD=odoo
-      # - ADDONS=sale_management,stock,account_account,purchase,mrp,odoo_initializer,ozone_settings,mrp_product_expiry,product_expiry,l10n_generic_coa
       - INITIALIZER_DATA_FILES_PATH=/mnt/odoo_config
       - INITIALIZER_CONFIG_FILE_PATH=/mnt/odoo_config/initializer_config.json
       - INITIALIZER_CHECKSUMS_PATH=/var/lib/odoo/checksums
