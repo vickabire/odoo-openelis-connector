@@ -158,9 +158,9 @@
     <!-- Repository for Mekom Solutions artifacts -->
     <repositories>
         <repository>
-            <id>mekom-solutions</id>
-            <name>Mekom Solutions Repository</name>
-            <url>https://maven.mekomsolutions.com/repository/public/</url>
+            <id>mks-nexus-public</id>
+            <name>Mekom Repository</name>
+            <url>https://nexus.mekomsolutions.net/repository/maven-public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>

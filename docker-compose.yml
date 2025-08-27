@@ -56,7 +56,7 @@ services:
       - DEFAULT_PW=adminADMIN!
       - TZ=Africa/Nairobi
       - CATALINA_OPTS= -Ddatasource.url=jdbc:postgresql://database:5432/clinlims -Ddatasource.username=clinlims -Ddatasource.password=clinlims
-      - ODOO_MAPPING_FILE=/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
+      - ODOO_MAPPING_FILE=/var/lib/openelis-global/properties/odoo-test-product-mapping.csv
     volumes:
       -  key_trust-store-volume:/etc/openelis-global
       -  lucene_index-vol:/var/lib/lucene_index
@@ -68,11 +68,11 @@ services:
       - ./configs/openelis/war/OpenELIS-Global.war:/usr/local/tomcat/webapps/OpenELIS-Global.war
       - ./configs/openelis/properties/SystemConfiguration.properties:/var/lib/openelis-global/properties/SystemConfiguration.properties
       - ./configs/openelis/test-map/test-loinc-map.csv:/var/lib/openelis-global/plugin-test-mappings/test-loinc-map.csv
-      - ./configs/openelis/properties/odoo-test-product-mapping.properties:/var/lib/openelis-global/properties/odoo-test-product-mapping.properties
+      - ./configs/openelis/properties/odoo-test-product-mapping.csv:/var/lib/openelis-global/properties/odoo-test-product-mapping.csv
     secrets:
       - source: datasource.password
       - source: common.properties
-      - source: odoo-test-product-mapping.properties
+      - source: odoo-test-product-mapping.csv
 
   fhir.openelis.org:
     container_name: external-fhir-api
@@ -200,8 +200,8 @@ secrets:
       file: ./configs/openelis/properties/common.properties
     hapi_application.yaml:
       file: ./configs/openelis/properties/hapi_application.yaml
-    odoo-test-product-mapping.properties:
-      file: ./configs/openelis/properties/odoo-test-product-mapping.properties
+    odoo-test-product-mapping.csv:
+      file: ./configs/openelis/properties/odoo-test-product-mapping.csv
 
 networks:
   hie:

@@ -1,24 +1,4 @@
 id,name,list_price,type,product_variant_ids/categ_id/id,default_code,description,sale_ok,purchase_ok,active
-odoo_test_covid_19antibodyigg_plasma,COVID-19ANTIBODYIgG(Plasma),85.00,service,product_category_labtests,LAB-COVID-IGG-PLASMA,COVID-19 Antibody IgG Test (Plasma),true,false,true
-odoo_test_covid_19antibodyigg_serum,COVID-19ANTIBODYIgG(Serum),85.00,service,product_category_labtests,LAB-COVID-IGG-SERUM,COVID-19 Antibody IgG Test (Serum),true,false,true
-odoo_test_covid_19antibodyigm_plasma,COVID-19ANTIBODYIgM(Plasma),85.00,service,product_category_labtests,LAB-COVID-IGM-PLASMA,COVID-19 Antibody IgM Test (Plasma),true,false,true
-odoo_test_covid_19antibodyigm_serum,COVID-19ANTIBODYIgM(Serum),85.00,service,product_category_labtests,LAB-COVID-IGM-SERUM,COVID-19 Antibody IgM Test (Serum),true,false,true
-odoo_test_covidpcr_fluid,COVIDPCR(Fluid),180.00,service,product_category_labtests,LAB-COVID-PCR-FLUID,COVID-19 PCR Test (Fluid),true,false,true
-odoo_test_covidpcr_respiratory_swab,COVIDPCR(Respiratory Swab),180.00,service,product_category_labtests,LAB-COVID-PCR-SWAB,COVID-19 PCR Test (Respiratory Swab),true,false,true
-odoo_test_covidpcr_sputum,COVIDPCR(Sputum),180.00,service,product_category_labtests,LAB-COVID-PCR-SPUTUM,COVID-19 PCR Test (Sputum),true,false,true
-odoo_test_denguepcr_dbs,DENGUEPCR(DBS),200.00,service,product_category_labtests,LAB-DENGUE-PCR-DBS,Dengue PCR Test (DBS),true,false,true
-odoo_test_denguepcr_plasma,DENGUEPCR(Plasma),200.00,service,product_category_labtests,LAB-DENGUE-PCR-PLASMA,Dengue PCR Test (Plasma),true,false,true
-odoo_test_denguepcr_serum,DENGUEPCR(Serum),200.00,service,product_category_labtests,LAB-DENGUE-PCR-SERUM,Dengue PCR Test (Serum),true,false,true
-odoo_test_hepatitisbviralload_plasma,HEPATITISBVIRALLOAD(Plasma),280.00,service,product_category_labtests,LAB-HEPATITISBVIRALLOAD_PLASMA,HEPATITISBVIRALLOAD(Plasma) - Laboratory Test,true,false,true
-odoo_test_hepatitisbviralload_serum,HEPATITISBVIRALLOAD(Serum),280.00,service,product_category_labtests,LAB-HEPATITISBVIRALLOAD_SERUM,HEPATITISBVIRALLOAD(Serum) - Laboratory Test,true,false,true
-odoo_test_hepatitiscviralload_plasma,HEPATITISCVIRALLOAD(Plasma),280.00,service,product_category_labtests,LAB-HEPATITISCVIRALLOAD_PLASMA,HEPATITISCVIRALLOAD(Plasma) - Laboratory Test,true,false,true
-odoo_test_hepatitiscviralload_serum,HEPATITISCVIRALLOAD(Serum),280.00,service,product_category_labtests,LAB-HEPATITISCVIRALLOAD_SERUM,HEPATITISCVIRALLOAD(Serum) - Laboratory Test,true,false,true
-odoo_test_hivinfantviralload_dbs,HIVINFANTVIRALLOAD(DBS),350.00,service,product_category_labtests,LAB-HIVINFANTVIRALLOAD_DBS,HIVINFANTVIRALLOAD(DBS) - Laboratory Test,true,false,true
-odoo_test_hivinfantviralload_plasma,HIVINFANTVIRALLOAD(Plasma),350.00,service,product_category_labtests,LAB-HIVINFANTVIRALLOAD_PLASMA,HIVINFANTVIRALLOAD(Plasma) - Laboratory Test,true,false,true
-odoo_test_hivinfantviralload_serum,HIVINFANTVIRALLOAD(Serum),350.00,service,product_category_labtests,LAB-HIVINFANTVIRALLOAD_SERUM,HIVINFANTVIRALLOAD(Serum) - Laboratory Test,true,false,true
-odoo_test_hivviralload_dbs,HIVVIRALLOAD(DBS),300.00,service,product_category_labtests,LAB-HIVVIRALLOAD_DBS,HIVVIRALLOAD(DBS) - Laboratory Test,true,false,true
-odoo_test_hivviralload_plasma,HIVVIRALLOAD(Plasma),300.00,service,product_category_labtests,LAB-HIVVIRALLOAD_PLASMA,HIVVIRALLOAD(Plasma) - Laboratory Test,true,false,true
-odoo_test_hivviralload_serum,HIVVIRALLOAD(Serum),300.00,service,product_category_labtests,LAB-HIVVIRALLOAD_SERUM,HIVVIRALLOAD(Serum) - Laboratory Test,true,false,true
 odoo_test_13945_1,13945-1,35.00,service,product_category_labtests,LAB-13945_1,13945-1 - Laboratory Test,true,false,true
 odoo_test_13954_3,13954-3,35.00,service,product_category_labtests,LAB-13954_3,13954-3 - Laboratory Test,true,false,true
 odoo_test_15205_8,15205-8,35.00,service,product_category_labtests,LAB-15205_8,15205-8 - Laboratory Test,true,false,true
@@ -38,67 +18,69 @@ odoo_test_5792_7,5792-7,35.00,service,product_category_labtests,LAB-5792_7,5792-
 odoo_test_6420_4,6420-4,35.00,service,product_category_labtests,LAB-6420_4,6420-4 - Laboratory Test,true,false,true
 odoo_test_8665_2,8665-2,35.00,service,product_category_labtests,LAB-8665_2,8665-2 - Laboratory Test,true,false,true
 odoo_test_ab,AB,25.00,service,product_category_labtests,LAB-AB,AB - Laboratory Test,true,false,true
+odoo_test_acide_ascorbique,Acide ascorbique,35.00,service,product_category_labtests,LAB-ACIDE_ASCORBIQUE,Acide ascorbique - Laboratory Test,true,false,true
+odoo_test_acide_nalix,Acide Nalix,35.00,service,product_category_labtests,LAB-ACIDE_NALIX,Acide Nalix - Laboratory Test,true,false,true
+odoo_test_acide_urique,Acide urique,28.00,service,product_category_labtests,LAB-ACIDE_URIQUE,Acide urique - Laboratory Test,true,false,true
+odoo_test_adenovirus,Adenovirus,85.00,service,product_category_labtests,LAB-ADENOVIRUS,Adenovirus - Laboratory Test,true,false,true
 odoo_test_adn_vih_1,ADN VIH-1,320.00,service,product_category_labtests,LAB-ADN_VIH_1,ADN VIH-1 - Laboratory Test,true,false,true
+odoo_test_ag_hbs,Ag HBs,65.00,service,product_category_labtests,LAB-AG_HBS,Ag HBs - Laboratory Test,true,false,true
 odoo_test_alat_30_c,ALAT 30° C,35.00,service,product_category_labtests,LAB-ALAT_30_C,ALAT 30° C - Laboratory Test,true,false,true
 odoo_test_alat_37_c,ALAT 37° C,35.00,service,product_category_labtests,LAB-ALAT_37_C,ALAT 37° C - Laboratory Test,true,false,true
+odoo_test_albumine,Albumine,30.00,service,product_category_labtests,LAB-ALBUMINE,Albumine - Laboratory Test,true,false,true
+odoo_test_albumine_recherche_miction,Albumine recherche miction,67.44,service,product_category_labtests,LAB-ALBUMINE_RECHERCHE_MICTION,Albumine recherche miction - Laboratory Test,true,false,true
+odoo_test_amniocent_se,amniocentèse,30.36,service,product_category_labtests,LAB-AMNIOCENT_SE,amniocentèse - Laboratory Test,true,false,true
+odoo_test_amox_clavu,Amox/Clavu,35.00,service,product_category_labtests,LAB-AMOX_CLAVU,Amox/Clavu - Laboratory Test,true,false,true
+odoo_test_ampiciline,Ampiciline,35.00,service,product_category_labtests,LAB-AMPICILINE,Ampiciline - Laboratory Test,true,false,true
+odoo_test_amylase,Amylase,40.00,service,product_category_labtests,LAB-AMYLASE,Amylase - Laboratory Test,true,false,true
+odoo_test_analyse_liquide_gastrique,analyse du liquide gastrique,17.37,service,product_category_labtests,LAB-ANALYSE_LIQUIDE_GASTRIQUE,analyse du liquide gastrique - Laboratory Test,true,false,true
+odoo_test_antibiogramme,Antibiogramme,65.00,service,product_category_labtests,LAB-ANTIBIOGRAMME,Antibiogramme - Laboratory Test,true,false,true
 odoo_test_arv_res,ARV res,250.00,service,product_category_labtests,LAB-ARV_RES,ARV res - Laboratory Test,true,false,true
 odoo_test_asat_30_c,ASAT 30° C,35.00,service,product_category_labtests,LAB-ASAT_30_C,ASAT 30° C - Laboratory Test,true,false,true
 odoo_test_asat_37_c,ASAT 37° C,35.00,service,product_category_labtests,LAB-ASAT_37_C,ASAT 37° C - Laboratory Test,true,false,true
 odoo_test_aso,ASO,45.00,service,product_category_labtests,LAB-ASO,ASO - Laboratory Test,true,false,true
+odoo_test_aspect,Aspect,35.00,service,product_category_labtests,LAB-ASPECT,Aspect - Laboratory Test,true,false,true
 odoo_test_at_iii_active,AT III Active,35.00,service,product_category_labtests,LAB-AT_III_ACTIVE,AT III Active - Laboratory Test,true,false,true
 odoo_test_at_iii_dosage,AT III Dosage,35.00,service,product_category_labtests,LAB-AT_III_DOSAGE,AT III Dosage - Laboratory Test,true,false,true
-odoo_test_acide_nalix,Acide Nalix,35.00,service,product_category_labtests,LAB-ACIDE_NALIX,Acide Nalix - Laboratory Test,true,false,true
-odoo_test_acide_ascorbique,Acide ascorbique,35.00,service,product_category_labtests,LAB-ACIDE_ASCORBIQUE,Acide ascorbique - Laboratory Test,true,false,true
-odoo_test_acide_urique,Acide urique,28.00,service,product_category_labtests,LAB-ACIDE_URIQUE,Acide urique - Laboratory Test,true,false,true
-odoo_test_adenovirus,Adenovirus,85.00,service,product_category_labtests,LAB-ADENOVIRUS,Adenovirus - Laboratory Test,true,false,true
-odoo_test_ag_hbs,Ag HBs,65.00,service,product_category_labtests,LAB-AG_HBS,Ag HBs - Laboratory Test,true,false,true
-odoo_test_albumine,Albumine,30.00,service,product_category_labtests,LAB-ALBUMINE,Albumine - Laboratory Test,true,false,true
-odoo_test_amox_clavu,Amox/Clavu,35.00,service,product_category_labtests,LAB-AMOX_CLAVU,Amox/Clavu - Laboratory Test,true,false,true
-odoo_test_ampiciline,Ampiciline,35.00,service,product_category_labtests,LAB-AMPICILINE,Ampiciline - Laboratory Test,true,false,true
-odoo_test_amylase,Amylase,40.00,service,product_category_labtests,LAB-AMYLASE,Amylase - Laboratory Test,true,false,true
-odoo_test_antibiogramme,Antibiogramme,65.00,service,product_category_labtests,LAB-ANTIBIOGRAMME,Antibiogramme - Laboratory Test,true,false,true
-odoo_test_aspect,Aspect,35.00,service,product_category_labtests,LAB-ASPECT,Aspect - Laboratory Test,true,false,true
 odoo_test_atypique_cell,Atypique Cell,35.00,service,product_category_labtests,LAB-ATYPIQUE_CELL,Atypique Cell - Laboratory Test,true,false,true
 odoo_test_azithromicine,Azithromicine,35.00,service,product_category_labtests,LAB-AZITHROMICINE,Azithromicine - Laboratory Test,true,false,true
 odoo_test_azote_ur_e,Azote Urée,25.00,service,product_category_labtests,LAB-AZOTE_UR_E,Azote Urée - Laboratory Test,true,false,true
 odoo_test_b_hcg,B-HCG,55.00,service,product_category_labtests,LAB-B_HCG,B-HCG - Laboratory Test,true,false,true
+odoo_test_b_ta_hcg_24_h,Béta HCG - 24 h,35.00,service,product_category_labtests,LAB-B_TA_HCG_24_H,Béta HCG - 24 h - Laboratory Test,true,false,true
 odoo_test_baar_auramine,BAAR Auramine,45.00,service,product_category_labtests,LAB-BAAR_AURAMINE,BAAR Auramine - Laboratory Test,true,false,true
 odoo_test_baar_zielh,BAAR Zielh,45.00,service,product_category_labtests,LAB-BAAR_ZIELH,BAAR Zielh - Laboratory Test,true,false,true
-odoo_test_be,BE,35.00,service,product_category_labtests,LAB-BE,BE - Laboratory Test,true,false,true
-odoo_test_bacilles_gram_plus,Bacilles Gram+,35.00,service,product_category_labtests,LAB-BACILLES_GRAM_PLUS,Bacilles Gram+ - Laboratory Test,true,false,true
 odoo_test_bacilles_gram_minus,Bacilles Gram-,35.00,service,product_category_labtests,LAB-BACILLES_GRAM_MINUS,Bacilles Gram- - Laboratory Test,true,false,true
+odoo_test_bacilles_gram_plus,Bacilles Gram+,35.00,service,product_category_labtests,LAB-BACILLES_GRAM_PLUS,Bacilles Gram+ - Laboratory Test,true,false,true
 odoo_test_bacteries,Bacteries,35.00,service,product_category_labtests,LAB-BACTERIES,Bacteries - Laboratory Test,true,false,true
 odoo_test_baermann,Baermann,35.00,service,product_category_labtests,LAB-BAERMANN,Baermann - Laboratory Test,true,false,true
 odoo_test_basophiles,Basophiles,25.00,service,product_category_labtests,LAB-BASOPHILES,Basophiles - Laboratory Test,true,false,true
+odoo_test_be,BE,35.00,service,product_category_labtests,LAB-BE,BE - Laboratory Test,true,false,true
 odoo_test_bicarbonates,Bicarbonates,28.00,service,product_category_labtests,LAB-BICARBONATES,Bicarbonates - Laboratory Test,true,false,true
 odoo_test_bilidirect,BiliDirect,30.00,service,product_category_labtests,LAB-BILIDIRECT,BiliDirect - Laboratory Test,true,false,true
 odoo_test_biliindirect,BiliIndirect,30.00,service,product_category_labtests,LAB-BILIINDIRECT,BiliIndirect - Laboratory Test,true,false,true
-odoo_test_bilitotale,BiliTotale,30.00,service,product_category_labtests,LAB-BILITOTALE,BiliTotale - Laboratory Test,true,false,true
 odoo_test_bilirubine,Bilirubine,30.00,service,product_category_labtests,LAB-BILIRUBINE,Bilirubine - Laboratory Test,true,false,true
+odoo_test_bilitotale,BiliTotale,30.00,service,product_category_labtests,LAB-BILITOTALE,BiliTotale - Laboratory Test,true,false,true
+odoo_test_bioline,Bioline,91.06,service,product_category_labtests,LAB-BIOLINE,Bioline - Laboratory Test,true,false,true
 odoo_test_bioline_plasma,Bioline-Plasma,35.00,service,product_category_labtests,LAB-BIOLINE_PLASMA,Bioline-Plasma - Laboratory Test,true,false,true
 odoo_test_bioline_sang_total,Bioline-Sang total,35.00,service,product_category_labtests,LAB-BIOLINE_SANG_TOTAL,Bioline-Sang total - Laboratory Test,true,false,true
 odoo_test_bioline_serum,Bioline-Serum,35.00,service,product_category_labtests,LAB-BIOLINE_SERUM,Bioline-Serum - Laboratory Test,true,false,true
+odoo_test_bioline_updated,Bioline updated,64.15,service,product_category_labtests,LAB-BIOLINE_UPDATED,Bioline updated - Laboratory Test,true,false,true
 odoo_test_bordetella,Bordetella,35.00,service,product_category_labtests,LAB-BORDETELLA,Bordetella - Laboratory Test,true,false,true
-odoo_test_b_ta_hcg_24_h,Béta HCG - 24 h,35.00,service,product_category_labtests,LAB-B_TA_HCG_24_H,Béta HCG - 24 h - Laboratory Test,true,false,true
 odoo_test_c3_du_complement,C3 du Complement,35.00,service,product_category_labtests,LAB-C3_DU_COMPLEMENT,C3 du Complement - Laboratory Test,true,false,true
 odoo_test_c4_du_complement,C4 du complement,35.00,service,product_category_labtests,LAB-C4_DU_COMPLEMENT,C4 du complement - Laboratory Test,true,false,true
-odoo_test_ccmh,CCMH,35.00,service,product_category_labtests,LAB-CCMH,CCMH - Laboratory Test,true,false,true
-odoo_test_cd4,CD4,120.00,service,product_category_labtests,LAB-CD4,CD4 - Laboratory Test,true,false,true
-odoo_test_cd4_abs,CD4 (Abs),120.00,service,product_category_labtests,LAB-CD4_ABS,CD4 (Abs) - Laboratory Test,true,false,true
-odoo_test_cd4_percent,CD4 %,120.00,service,product_category_labtests,LAB-CD4_PERCENT,CD4 % - Laboratory Test,true,false,true
-odoo_test_cd4_en_percent,CD4 en %,35.00,service,product_category_labtests,LAB-CD4_EN_PERCENT,CD4 en % - Laboratory Test,true,false,true
-odoo_test_cd4_en_mm3,CD4 en mm3,35.00,service,product_category_labtests,LAB-CD4_EN_MM3,CD4 en mm3 - Laboratory Test,true,false,true
-odoo_test_cd4_percent_alt,CD4%,35.00,service,product_category_labtests,LAB-CD4_PERCENT_ALT,CD4% - Laboratory Test,true,false,true
-odoo_test_cmv_ig_a,CMV Ig A,35.00,service,product_category_labtests,LAB-CMV_IG_A,CMV Ig A - Laboratory Test,true,false,true
-odoo_test_cmv_ig_g,CMV Ig G,35.00,service,product_category_labtests,LAB-CMV_IG_G,CMV Ig G - Laboratory Test,true,false,true
-odoo_test_cmv_ig_m,CMV Ig M,35.00,service,product_category_labtests,LAB-CMV_IG_M,CMV Ig M - Laboratory Test,true,false,true
-odoo_test_cpk,CPK,50.00,service,product_category_labtests,LAB-CPK,CPK - Laboratory Test,true,false,true
-odoo_test_crp,CRP,45.00,service,product_category_labtests,LAB-CRP,CRP - Laboratory Test,true,false,true
-odoo_test_crp_quantitatif,CRP Quantitatif,35.00,service,product_category_labtests,LAB-CRP_QUANTITATIF,CRP Quantitatif - Laboratory Test,true,false,true
 odoo_test_calcium,Calcium,28.00,service,product_category_labtests,LAB-CALCIUM,Calcium - Laboratory Test,true,false,true
 odoo_test_calcium_ca,Calcium (Ca++),35.00,service,product_category_labtests,LAB-CALCIUM_CA,Calcium (Ca++) - Laboratory Test,true,false,true
 odoo_test_camp_test,Camp-test,35.00,service,product_category_labtests,LAB-CAMP_TEST,Camp-test - Laboratory Test,true,false,true
 odoo_test_catalase,Catalase,35.00,service,product_category_labtests,LAB-CATALASE,Catalase - Laboratory Test,true,false,true
+odoo_test_ccmh,CCMH,35.00,service,product_category_labtests,LAB-CCMH,CCMH - Laboratory Test,true,false,true
+odoo_test_cd3_percentage_count,CD3 percentage count,12.03,service,product_category_labtests,LAB-CD3_PERCENTAGE_COUNT,CD3 percentage count - Laboratory Test,true,false,true
+odoo_test_cd4,CD4,120.00,service,product_category_labtests,LAB-CD4,CD4 - Laboratory Test,true,false,true
+odoo_test_cd4_abs,CD4 (Abs),120.00,service,product_category_labtests,LAB-CD4_ABS,CD4 (Abs) - Laboratory Test,true,false,true
+odoo_test_cd4_absolute_count,CD4 absolute count,77.25,service,product_category_labtests,LAB-CD4_ABSOLUTE_COUNT,CD4 absolute count - Laboratory Test,true,false,true
+odoo_test_cd4_en_mm3,CD4 en mm3,35.00,service,product_category_labtests,LAB-CD4_EN_MM3,CD4 en mm3 - Laboratory Test,true,false,true
+odoo_test_cd4_en_percent,CD4 en %,35.00,service,product_category_labtests,LAB-CD4_EN_PERCENT,CD4 en % - Laboratory Test,true,false,true
+odoo_test_cd4_percent,CD4 %,120.00,service,product_category_labtests,LAB-CD4_PERCENT,CD4 % - Laboratory Test,true,false,true
+odoo_test_cd4_percent_alt,CD4%,35.00,service,product_category_labtests,LAB-CD4_PERCENT_ALT,CD4% - Laboratory Test,true,false,true
+odoo_test_cd4_percentage_count,CD4 percentage count,45.69,service,product_category_labtests,LAB-CD4_PERCENTAGE_COUNT,CD4 percentage count - Laboratory Test,true,false,true
 odoo_test_cefalotine,Cefalotine,35.00,service,product_category_labtests,LAB-CEFALOTINE,Cefalotine - Laboratory Test,true,false,true
 odoo_test_ceftazidime,Ceftazidime,35.00,service,product_category_labtests,LAB-CEFTAZIDIME,Ceftazidime - Laboratory Test,true,false,true
 odoo_test_cell_epith,Cell Epith,35.00,service,product_category_labtests,LAB-CELL_EPITH,Cell Epith - Laboratory Test,true,false,true
@@ -117,60 +99,88 @@ odoo_test_chol_hdl,Chol HDL,35.00,service,product_category_labtests,LAB-CHOL_HDL
 odoo_test_chol_total,Chol total,35.00,service,product_category_labtests,LAB-CHOL_TOTAL,Chol total - Laboratory Test,true,false,true
 odoo_test_cholera,Cholera,35.00,service,product_category_labtests,LAB-CHOLERA,Cholera - Laboratory Test,true,false,true
 odoo_test_cholera_rapide,Cholera Rapide,35.00,service,product_category_labtests,LAB-CHOLERA_RAPIDE,Cholera Rapide - Laboratory Test,true,false,true
-odoo_test_cholesteroltot,CholesterolTot,35.00,service,product_category_labtests,LAB-CHOLESTEROLTOT,CholesterolTot - Laboratory Test,true,false,true
+odoo_test_cholest_rol_hdl,Cholestérol HDL,66.11,service,product_category_labtests,LAB-CHOLEST_ROL_HDL,Cholestérol HDL - Laboratory Test,true,false,true
 odoo_test_cholest_rol_total,Cholestérol total,35.00,service,product_category_labtests,LAB-CHOLEST_ROL_TOTAL,Cholestérol total - Laboratory Test,true,false,true
+odoo_test_cholesteroltot,CholesterolTot,35.00,service,product_category_labtests,LAB-CHOLESTEROLTOT,CholesterolTot - Laboratory Test,true,false,true
 odoo_test_ciprofloxacine,Ciprofloxacine,35.00,service,product_category_labtests,LAB-CIPROFLOXACINE,Ciprofloxacine - Laboratory Test,true,false,true
-odoo_test_ck_total,Ck total,35.00,service,product_category_labtests,LAB-CK_TOTAL,Ck total - Laboratory Test,true,false,true
 odoo_test_ck_mb,Ck-mb,35.00,service,product_category_labtests,LAB-CK_MB,Ck-mb - Laboratory Test,true,false,true
+odoo_test_ck_total,Ck total,35.00,service,product_category_labtests,LAB-CK_TOTAL,Ck total - Laboratory Test,true,false,true
 odoo_test_clostridium_difficile_toxin_a_b,Clostridium Difficile Toxin A & B,35.00,service,product_category_labtests,LAB-CLOSTRIDIUM_DIFFICILE_TOXIN_A_B,Clostridium Difficile Toxin A & B - Laboratory Test,true,false,true
 odoo_test_clue_cells,Clue Cells,35.00,service,product_category_labtests,LAB-CLUE_CELLS,Clue Cells - Laboratory Test,true,false,true
+odoo_test_cmv_ig_a,CMV Ig A,35.00,service,product_category_labtests,LAB-CMV_IG_A,CMV Ig A - Laboratory Test,true,false,true
+odoo_test_cmv_ig_g,CMV Ig G,35.00,service,product_category_labtests,LAB-CMV_IG_G,CMV Ig G - Laboratory Test,true,false,true
+odoo_test_cmv_ig_m,CMV Ig M,35.00,service,product_category_labtests,LAB-CMV_IG_M,CMV Ig M - Laboratory Test,true,false,true
 odoo_test_coag_en_tube,Coag en tube,35.00,service,product_category_labtests,LAB-COAG_EN_TUBE,Coag en tube - Laboratory Test,true,false,true
 odoo_test_coagulase_libre,Coagulase libre,35.00,service,product_category_labtests,LAB-COAGULASE_LIBRE,Coagulase libre - Laboratory Test,true,false,true
-odoo_test_cocci_gram_plus,Cocci Gram+,35.00,service,product_category_labtests,LAB-COCCI_GRAM_PLUS,Cocci Gram+ - Laboratory Test,true,false,true
 odoo_test_cocci_gram_minus,Cocci Gram-,35.00,service,product_category_labtests,LAB-COCCI_GRAM_MINUS,Cocci Gram- - Laboratory Test,true,false,true
+odoo_test_cocci_gram_plus,Cocci Gram+,35.00,service,product_category_labtests,LAB-COCCI_GRAM_PLUS,Cocci Gram+ - Laboratory Test,true,false,true
 odoo_test_coccobac_gram,CoccoBac Gram-,35.00,service,product_category_labtests,LAB-COCCOBAC_GRAM,CoccoBac Gram- - Laboratory Test,true,false,true
 odoo_test_cocobact_gram,Cocobact Gram-,35.00,service,product_category_labtests,LAB-COCOBACT_GRAM,Cocobact Gram- - Laboratory Test,true,false,true
 odoo_test_colaration_de_gram,Colaration de Gram,35.00,service,product_category_labtests,LAB-COLARATION_DE_GRAM,Colaration de Gram - Laboratory Test,true,false,true
 odoo_test_colloidal_gold,Colloidal Gold,35.00,service,product_category_labtests,LAB-COLLOIDAL_GOLD,Colloidal Gold - Laboratory Test,true,false,true
 odoo_test_colloidal_gold_hiv,Colloidal Gold HIV,35.00,service,product_category_labtests,LAB-COLLOIDAL_GOLD_HIV,Colloidal Gold HIV - Laboratory Test,true,false,true
+odoo_test_coloration_cytochimique,Coloration cytochimique,53.10,service,product_category_labtests,LAB-COLORATION_CYTOCHIMIQUE,Coloration cytochimique - Laboratory Test,true,false,true
 odoo_test_coloration_de_gram,Coloration de Gram,35.00,service,product_category_labtests,LAB-COLORATION_DE_GRAM,Coloration de Gram - Laboratory Test,true,false,true
 odoo_test_coloration_de_kinyoun,Coloration de Kinyoun,35.00,service,product_category_labtests,LAB-COLORATION_DE_KINYOUN,Coloration de Kinyoun - Laboratory Test,true,false,true
 odoo_test_coloration_de_ziehl_neelsen,Coloration de Ziehl-Neelsen,35.00,service,product_category_labtests,LAB-COLORATION_DE_ZIEHL_NEELSEN,Coloration de Ziehl-Neelsen - Laboratory Test,true,false,true
-odoo_test_compte_spermes,Compte Spermes,35.00,service,product_category_labtests,LAB-COMPTE_SPERMES,Compte Spermes - Laboratory Test,true,false,true
 odoo_test_compte_des_globules_blancs,Compte des Globules Blancs,35.00,service,product_category_labtests,LAB-COMPTE_DES_GLOBULES_BLANCS,Compte des Globules Blancs - Laboratory Test,true,false,true
 odoo_test_compte_des_globules_rouges,Compte des Globules Rouges,35.00,service,product_category_labtests,LAB-COMPTE_DES_GLOBULES_ROUGES,Compte des Globules Rouges - Laboratory Test,true,false,true
+odoo_test_compte_spermes,Compte Spermes,35.00,service,product_category_labtests,LAB-COMPTE_SPERMES,Compte Spermes - Laboratory Test,true,false,true
+odoo_test_concentration_corpusculaire_moyenne_h_moglobine,Concentration Corpusculaire Moyenne en Hémoglobine,31.74,service,product_category_labtests,LAB-CONCENTRATION_CORPUSCULAIRE_MOYENNE_H_MOGLOBINE,Concentration Corpusculaire Moyenne en Hémoglobine - Laboratory Test,true,false,true
 odoo_test_consistance,Consistance,35.00,service,product_category_labtests,LAB-CONSISTANCE,Consistance - Laboratory Test,true,false,true
 odoo_test_coombs_direct,Coombs Direct,35.00,service,product_category_labtests,LAB-COOMBS_DIRECT,Coombs Direct - Laboratory Test,true,false,true
 odoo_test_coombs_indirect,Coombs Indirect,35.00,service,product_category_labtests,LAB-COOMBS_INDIRECT,Coombs Indirect - Laboratory Test,true,false,true
 odoo_test_coproculture,Coproculture,70.00,service,product_category_labtests,LAB-COPROCULTURE,Coproculture - Laboratory Test,true,false,true
 odoo_test_couleur,Couleur,35.00,service,product_category_labtests,LAB-COULEUR,Couleur - Laboratory Test,true,false,true
+odoo_test_covid_19_antibody_igg,COVID-19 ANITBODY IgG,81.18,service,product_category_labtests,LAB-COVID_19_ANTIBODY_IGG,COVID-19 ANITBODY IgG - Laboratory Test,true,false,true
+odoo_test_covid_19_antibody_igm,COVID-19 ANITBODY IgM,19.73,service,product_category_labtests,LAB-COVID_19_ANTIBODY_IGM,COVID-19 ANITBODY IgM - Laboratory Test,true,false,true
+odoo_test_covid_19_pcr,COVID-19 PCR,88.25,service,product_category_labtests,LAB-COVID_19_PCR,COVID-19 PCR - Laboratory Test,true,false,true
+odoo_test_covid_19antibodyigg_plasma,COVID-19ANTIBODYIgG(Plasma),81.18,service,product_category_labtests,LAB-COVID-IGG-PLASMA,COVID-19 Antibody IgG Test (Plasma),true,false,true
+odoo_test_covid_19antibodyigg_serum,COVID-19ANTIBODYIgG(Serum),81.18,service,product_category_labtests,LAB-COVID-IGG-SERUM,COVID-19 Antibody IgG Test (Serum),true,false,true
+odoo_test_covid_19antibodyigm_plasma,COVID-19ANTIBODYIgM(Plasma),19.73,service,product_category_labtests,LAB-COVID-IGM-PLASMA,COVID-19 Antibody IgM Test (Plasma),true,false,true
+odoo_test_covid_19antibodyigm_serum,COVID-19ANTIBODYIgM(Serum),19.73,service,product_category_labtests,LAB-COVID-IGM-SERUM,COVID-19 Antibody IgM Test (Serum),true,false,true
+odoo_test_covidpcr_fluid,COVIDPCR(Fluid),88.25,service,product_category_labtests,LAB-COVID-PCR-FLUID,COVID-19 PCR Test (Fluid),true,false,true
+odoo_test_covidpcr_respiratory_swab,COVIDPCR(Respiratory Swab),88.25,service,product_category_labtests,LAB-COVID-PCR-SWAB,COVID-19 PCR Test (Respiratory Swab),true,false,true
+odoo_test_covidpcr_sputum,COVIDPCR(Sputum),88.25,service,product_category_labtests,LAB-COVID-PCR-SPUTUM,COVID-19 PCR Test (Sputum),true,false,true
+odoo_test_cpk,CPK,50.00,service,product_category_labtests,LAB-CPK,CPK - Laboratory Test,true,false,true
+odoo_test_cr_atinine,Créatinine,35.00,service,product_category_labtests,LAB-CR_ATININE,Créatinine - Laboratory Test,true,false,true
 odoo_test_creatinine,Creatinine,25.00,service,product_category_labtests,LAB-CREATININE,Creatinine - Laboratory Test,true,false,true
 odoo_test_criptococcus_test_rapide,Criptococcus test rapide,35.00,service,product_category_labtests,LAB-CRIPTOCOCCUS_TEST_RAPIDE,Criptococcus test rapide - Laboratory Test,true,false,true
 odoo_test_cristal_cholest,Cristal Cholest,35.00,service,product_category_labtests,LAB-CRISTAL_CHOLEST,Cristal Cholest - Laboratory Test,true,false,true
 odoo_test_cristal_urate,Cristal Urate,35.00,service,product_category_labtests,LAB-CRISTAL_URATE,Cristal Urate - Laboratory Test,true,false,true
 odoo_test_cristaux,Cristaux,35.00,service,product_category_labtests,LAB-CRISTAUX,Cristaux - Laboratory Test,true,false,true
+odoo_test_crp,CRP,45.00,service,product_category_labtests,LAB-CRP,CRP - Laboratory Test,true,false,true
+odoo_test_crp_quantitatif,CRP Quantitatif,35.00,service,product_category_labtests,LAB-CRP_QUANTITATIF,CRP Quantitatif - Laboratory Test,true,false,true
 odoo_test_crypto_zielh,Crypto Zielh,35.00,service,product_category_labtests,LAB-CRYPTO_ZIELH,Crypto Zielh - Laboratory Test,true,false,true
 odoo_test_cryptococcal_ag,Cryptococcal Ag,35.00,service,product_category_labtests,LAB-CRYPTOCOCCAL_AG,Cryptococcal Ag - Laboratory Test,true,false,true
-odoo_test_cr_atinine,Créatinine,35.00,service,product_category_labtests,LAB-CR_ATININE,Créatinine - Laboratory Test,true,false,true
 odoo_test_cult_milieu_liqu,Cult milieu Liqu,35.00,service,product_category_labtests,LAB-CULT_MILIEU_LIQU,Cult milieu Liqu - Laboratory Test,true,false,true
 odoo_test_culture,Culture,55.00,service,product_category_labtests,LAB-CULTURE,Culture - Laboratory Test,true,false,true
-odoo_test_culture_bk,Culture BK,35.00,service,product_category_labtests,LAB-CULTURE_BK,Culture BK - Laboratory Test,true,false,true
 odoo_test_culture_bacterienne,Culture Bacterienne,65.00,service,product_category_labtests,LAB-CULTURE_BACTERIENNE,Culture Bacterienne - Laboratory Test,true,false,true
+odoo_test_culture_bk,Culture BK,35.00,service,product_category_labtests,LAB-CULTURE_BK,Culture BK - Laboratory Test,true,false,true
 odoo_test_culture_de_mycobacteries_liquide,Culture de mycobacteries liquide,35.00,service,product_category_labtests,LAB-CULTURE_DE_MYCOBACTERIES_LIQUIDE,Culture de mycobacteries liquide - Laboratory Test,true,false,true
 odoo_test_culture_de_mycobacteries_solide,Culture de mycobacteries solide,35.00,service,product_category_labtests,LAB-CULTURE_DE_MYCOBACTERIES_SOLIDE,Culture de mycobacteries solide - Laboratory Test,true,false,true
+odoo_test_culture_sang,culture de Sang,83.41,service,product_category_labtests,LAB-CULTURE_SANG,culture de Sang - Laboratory Test,true,false,true
 odoo_test_cylindres,Cylindres,35.00,service,product_category_labtests,LAB-CYLINDRES,Cylindres - Laboratory Test,true,false,true
-odoo_test_dna_pcr,DNA PCR,280.00,service,product_category_labtests,LAB-DNA_PCR,DNA PCR - Laboratory Test,true,false,true
-odoo_test_dnase,DNAse,35.00,service,product_category_labtests,LAB-DNASE,DNAse - Laboratory Test,true,false,true
+odoo_test_d_nombrement_lymphocytes_cd4_mm3,Dénombrement des lymphocytes CD4 (mm3),31.82,service,product_category_labtests,LAB-D_NOMBREMENT_LYMPHOCYTES_CD4_MM3,Dénombrement des lymphocytes CD4 (mm3) - Laboratory Test,true,false,true
+odoo_test_d_nombrement_lymphocytes_cd4_percent,Dénombrement des lymphocytes CD4 (%),17.12,service,product_category_labtests,LAB-D_NOMBREMENT_LYMPHOCYTES_CD4_PERCENT,Dénombrement des lymphocytes CD4 (%) - Laboratory Test,true,false,true
 odoo_test_date_de_mise_sous_arv,Date de mise sous ARV,35.00,service,product_category_labtests,LAB-DATE_DE_MISE_SOUS_ARV,Date de mise sous ARV - Laboratory Test,true,false,true
 odoo_test_dengue,Dengue,85.00,service,product_category_labtests,LAB-DENGUE,Dengue - Laboratory Test,true,false,true
 odoo_test_dengue_ig_a,Dengue Ig A,35.00,service,product_category_labtests,LAB-DENGUE_IG_A,Dengue Ig A - Laboratory Test,true,false,true
 odoo_test_dengue_ig_g,Dengue Ig G,35.00,service,product_category_labtests,LAB-DENGUE_IG_G,Dengue Ig G - Laboratory Test,true,false,true
 odoo_test_dengue_ns1_ag,Dengue NS1 Ag,95.00,service,product_category_labtests,LAB-DENGUE_NS1_AG,Dengue NS1 Ag - Laboratory Test,true,false,true
 odoo_test_dengue_ns1ag,Dengue NS1Ag,35.00,service,product_category_labtests,LAB-DENGUE_NS1AG,Dengue NS1Ag - Laboratory Test,true,false,true
+odoo_test_dengue_pcr,DENGUE PCR,83.57,service,product_category_labtests,LAB-DENGUE_PCR,DENGUE PCR - Laboratory Test,true,false,true
+odoo_test_denguepcr_dbs,DENGUEPCR(DBS),83.57,service,product_category_labtests,LAB-DENGUE-PCR-DBS,Dengue PCR Test (DBS),true,false,true
+odoo_test_denguepcr_plasma,DENGUEPCR(Plasma),83.57,service,product_category_labtests,LAB-DENGUE-PCR-PLASMA,Dengue PCR Test (Plasma),true,false,true
+odoo_test_denguepcr_serum,DENGUEPCR(Serum),83.57,service,product_category_labtests,LAB-DENGUE-PCR-SERUM,Dengue PCR Test (Serum),true,false,true
 odoo_test_densite,Densite,35.00,service,product_category_labtests,LAB-DENSITE,Densite - Laboratory Test,true,false,true
+odoo_test_detection_resistance_antiretroviraux,Detection de la resistance aux antiretroviraux,89.20,service,product_category_labtests,LAB-DETECTION_RESISTANCE_ANTIRETROVIRAUX,Detection de la resistance aux antiretroviraux - Laboratory Test,true,false,true
 odoo_test_determine,Determine,45.00,service,product_category_labtests,LAB-DETERMINE,Determine - Laboratory Test,true,false,true
 odoo_test_determine_vih,Determine VIH,45.00,service,product_category_labtests,LAB-DETERMINE_VIH,Determine VIH - Laboratory Test,true,false,true
 odoo_test_diphterie,Diphterie,35.00,service,product_category_labtests,LAB-DIPHTERIE,Diphterie - Laboratory Test,true,false,true
+odoo_test_dna_pcr,DNA PCR,280.00,service,product_category_labtests,LAB-DNA_PCR,DNA PCR - Laboratory Test,true,false,true
+odoo_test_dna_pcr_exact,DNA PCR,76.64,service,product_category_labtests,LAB-DNA_PCR_EXACT,DNA PCR - Laboratory Test,true,false,true
+odoo_test_dnase,DNAse,35.00,service,product_category_labtests,LAB-DNASE,DNAse - Laboratory Test,true,false,true
 odoo_test_duengue,Duengue,35.00,service,product_category_labtests,LAB-DUENGUE,Duengue - Laboratory Test,true,false,true
 odoo_test_echantillon,Echantillon,35.00,service,product_category_labtests,LAB-ECHANTILLON,Echantillon - Laboratory Test,true,false,true
 odoo_test_electrophor_hb,Electrophor Hb,35.00,service,product_category_labtests,LAB-ELECTROPHOR_HB,Electrophor Hb - Laboratory Test,true,false,true
@@ -178,54 +188,59 @@ odoo_test_elisa,Elisa,75.00,service,product_category_labtests,LAB-ELISA,Elisa - 
 odoo_test_elisa_vih,Elisa VIH,75.00,service,product_category_labtests,LAB-ELISA_VIH,Elisa VIH - Laboratory Test,true,false,true
 odoo_test_eosinophile,Eosinophile,35.00,service,product_category_labtests,LAB-EOSINOPHILE,Eosinophile - Laboratory Test,true,false,true
 odoo_test_eosinophiles,Eosinophiles,25.00,service,product_category_labtests,LAB-EOSINOPHILES,Eosinophiles - Laboratory Test,true,false,true
+odoo_test_examen_direct,Examen direct,35.00,service,product_category_labtests,LAB-EXAMEN_DIRECT,Examen direct - Laboratory Test,true,false,true
 odoo_test_examen_microscopique_apres_concentration,Examen Microscopique apres concentration,35.00,service,product_category_labtests,LAB-EXAMEN_MICROSCOPIQUE_APRES_CONCENTRATION,Examen Microscopique apres concentration - Laboratory Test,true,false,true
 odoo_test_examen_microscopique_direct,Examen Microscopique direct,35.00,service,product_category_labtests,LAB-EXAMEN_MICROSCOPIQUE_DIRECT,Examen Microscopique direct - Laboratory Test,true,false,true
-odoo_test_examen_direct,Examen direct,35.00,service,product_category_labtests,LAB-EXAMEN_DIRECT,Examen direct - Laboratory Test,true,false,true
 odoo_test_expectoauramine,ExpectoAURAMINE,35.00,service,product_category_labtests,LAB-EXPECTOAURAMINE,ExpectoAURAMINE - Laboratory Test,true,false,true
 odoo_test_expectozielh,ExpectoZIELH,35.00,service,product_category_labtests,LAB-EXPECTOZIELH,ExpectoZIELH - Laboratory Test,true,false,true
 odoo_test_extradiplogram,ExtraDiploGram-,35.00,service,product_category_labtests,LAB-EXTRADIPLOGRAM,ExtraDiploGram- - Laboratory Test,true,false,true
-odoo_test_flu,FLU,35.00,service,product_category_labtests,LAB-FLU,FLU - Laboratory Test,true,false,true
-odoo_test_fsh,FSH,80.00,service,product_category_labtests,LAB-FSH,FSH - Laboratory Test,true,false,true
 odoo_test_facteur_ix,Facteur IX,35.00,service,product_category_labtests,LAB-FACTEUR_IX,Facteur IX - Laboratory Test,true,false,true
 odoo_test_facteur_rhumatoide,Facteur Rhumatoide,35.00,service,product_category_labtests,LAB-FACTEUR_RHUMATOIDE,Facteur Rhumatoide - Laboratory Test,true,false,true
 odoo_test_facteur_viii,Facteur VIII,35.00,service,product_category_labtests,LAB-FACTEUR_VIII,Facteur VIII - Laboratory Test,true,false,true
 odoo_test_fer_serique,Fer Serique,35.00,service,product_category_labtests,LAB-FER_SERIQUE,Fer Serique - Laboratory Test,true,false,true
 odoo_test_fibrinogene,Fibrinogene,35.00,service,product_category_labtests,LAB-FIBRINOGENE,Fibrinogene - Laboratory Test,true,false,true
+odoo_test_flu,FLU,35.00,service,product_category_labtests,LAB-FLU,FLU - Laboratory Test,true,false,true
 odoo_test_formes_anormales,Formes anormales,35.00,service,product_category_labtests,LAB-FORMES_ANORMALES,Formes anormales - Laboratory Test,true,false,true
 odoo_test_formes_normales,Formes normales,35.00,service,product_category_labtests,LAB-FORMES_NORMALES,Formes normales - Laboratory Test,true,false,true
 odoo_test_frot_ureth_gram,Frot Ureth Gram,35.00,service,product_category_labtests,LAB-FROT_URETH_GRAM,Frot Ureth Gram - Laboratory Test,true,false,true
 odoo_test_frot_vaggram,Frot VagGram,35.00,service,product_category_labtests,LAB-FROT_VAGGRAM,Frot VagGram - Laboratory Test,true,false,true
 odoo_test_fructose,Fructose,35.00,service,product_category_labtests,LAB-FRUCTOSE,Fructose - Laboratory Test,true,false,true
-odoo_test_gb,GB,22.00,service,product_category_labtests,LAB-GB,GB - Laboratory Test,true,false,true
-odoo_test_gpp,GPP,35.00,service,product_category_labtests,LAB-GPP,GPP - Laboratory Test,true,false,true
-odoo_test_gr,GR,22.00,service,product_category_labtests,LAB-GR,GR - Laboratory Test,true,false,true
-odoo_test_gram_upper,GRAM,25.00,service,product_category_labtests,LAB-GRAM_UPPER,GRAM - Laboratory Test,true,false,true
-odoo_test_gram_ascites,GRAM Ascites,35.00,service,product_category_labtests,LAB-GRAM_ASCITES,GRAM Ascites - Laboratory Test,true,false,true
+odoo_test_fsh,FSH,80.00,service,product_category_labtests,LAB-FSH,FSH - Laboratory Test,true,false,true
 odoo_test_gastroenteric_pathogens,Gastroenteric Pathogens,35.00,service,product_category_labtests,LAB-GASTROENTERIC_PATHOGENS,Gastroenteric Pathogens - Laboratory Test,true,false,true
+odoo_test_gb,GB,22.00,service,product_category_labtests,LAB-GB,GB - Laboratory Test,true,false,true
 odoo_test_genie_ii,Genie II,35.00,service,product_category_labtests,LAB-GENIE_II,Genie II - Laboratory Test,true,false,true
 odoo_test_genie_ii_10,Genie II 10,35.00,service,product_category_labtests,LAB-GENIE_II_10,Genie II 10 - Laboratory Test,true,false,true
 odoo_test_genie_ii_100,Genie II 100,35.00,service,product_category_labtests,LAB-GENIE_II_100,Genie II 100 - Laboratory Test,true,false,true
+odoo_test_genie_iii,Genie III,83.37,service,product_category_labtests,LAB-GENIE_III,Genie III - Laboratory Test,true,false,true
 odoo_test_genie_iii_plasma,Genie III-Plasma,35.00,service,product_category_labtests,LAB-GENIE_III_PLASMA,Genie III-Plasma - Laboratory Test,true,false,true
 odoo_test_genie_iii_sang_t,Genie III-Sang t,35.00,service,product_category_labtests,LAB-GENIE_III_SANG_T,Genie III-Sang t - Laboratory Test,true,false,true
 odoo_test_genie_iii_serum,Genie III-Serum,35.00,service,product_category_labtests,LAB-GENIE_III_SERUM,Genie III-Serum - Laboratory Test,true,false,true
+odoo_test_genotypage,Génotypage,90.49,service,product_category_labtests,LAB-GENOTYPAGE,Génotypage - Laboratory Test,true,false,true
 odoo_test_gentamycine,Gentamycine,35.00,service,product_category_labtests,LAB-GENTAMYCINE,Gentamycine - Laboratory Test,true,false,true
 odoo_test_glucose,Glucose,20.00,service,product_category_labtests,LAB-GLUCOSE,Glucose - Laboratory Test,true,false,true
 odoo_test_gly,Gly,35.00,service,product_category_labtests,LAB-GLY,Gly - Laboratory Test,true,false,true
-odoo_test_glycemie,Glycemie,20.00,service,product_category_labtests,LAB-GLYCEMIE,Glycemie - Laboratory Test,true,false,true
-odoo_test_glycemie_fasting,Glycemie Fasting,35.00,service,product_category_labtests,LAB-GLYCEMIE_FASTING,Glycemie Fasting - Laboratory Test,true,false,true
-odoo_test_glycemie_fastning,Glycemie Fastning,35.00,service,product_category_labtests,LAB-GLYCEMIE_FASTNING,Glycemie Fastning - Laboratory Test,true,false,true
 odoo_test_glyc_mie,Glycémie,35.00,service,product_category_labtests,LAB-GLYC_MIE,Glycémie - Laboratory Test,true,false,true
 odoo_test_glyc_mie_provoquee_1_2_hre,Glycémie provoquee 1/2 hre,35.00,service,product_category_labtests,LAB-GLYC_MIE_PROVOQUEE_1_2_HRE,Glycémie provoquee 1/2 hre - Laboratory Test,true,false,true
 odoo_test_glyc_mie_provoquee_1hre,Glycémie provoquee 1hre,35.00,service,product_category_labtests,LAB-GLYC_MIE_PROVOQUEE_1HRE,Glycémie provoquee 1hre - Laboratory Test,true,false,true
 odoo_test_glyc_mie_provoquee_2hres,Glycémie provoquee 2hres,35.00,service,product_category_labtests,LAB-GLYC_MIE_PROVOQUEE_2HRES,Glycémie provoquee 2hres - Laboratory Test,true,false,true
 odoo_test_glyc_mie_provoquee_3_hres,Glycémie provoquee 3 hres,35.00,service,product_category_labtests,LAB-GLYC_MIE_PROVOQUEE_3_HRES,Glycémie provoquee 3 hres - Laboratory Test,true,false,true
 odoo_test_glyc_mie_provoquee_4_hres,Glycémie provoquee 4 hres,35.00,service,product_category_labtests,LAB-GLYC_MIE_PROVOQUEE_4_HRES,Glycémie provoquee 4 hres - Laboratory Test,true,false,true
+odoo_test_glycemie,Glycemie,20.00,service,product_category_labtests,LAB-GLYCEMIE,Glycemie - Laboratory Test,true,false,true
+odoo_test_glycemie_fasting,Glycemie Fasting,35.00,service,product_category_labtests,LAB-GLYCEMIE_FASTING,Glycemie Fasting - Laboratory Test,true,false,true
+odoo_test_glycemie_fastning,Glycemie Fastning,35.00,service,product_category_labtests,LAB-GLYCEMIE_FASTNING,Glycemie Fastning - Laboratory Test,true,false,true
+odoo_test_gpp,GPP,35.00,service,product_category_labtests,LAB-GPP,GPP - Laboratory Test,true,false,true
+odoo_test_gr,GR,22.00,service,product_category_labtests,LAB-GR,GR - Laboratory Test,true,false,true
 odoo_test_gram,Gram,25.00,service,product_category_labtests,LAB-GRAM,Gram - Laboratory Test,true,false,true
+odoo_test_gram_ascites,GRAM Ascites,35.00,service,product_category_labtests,LAB-GRAM_ASCITES,GRAM Ascites - Laboratory Test,true,false,true
+odoo_test_gram_upper,GRAM,25.00,service,product_category_labtests,LAB-GRAM_UPPER,GRAM - Laboratory Test,true,false,true
 odoo_test_gramm,Gramm,35.00,service,product_category_labtests,LAB-GRAMM,Gramm - Laboratory Test,true,false,true
 odoo_test_groupe_abo,Groupe ABO,30.00,service,product_category_labtests,LAB-GROUPE_ABO,Groupe ABO - Laboratory Test,true,false,true
 odoo_test_groupe_rhesus,Groupe Rhesus,30.00,service,product_category_labtests,LAB-GROUPE_RHESUS,Groupe Rhesus - Laboratory Test,true,false,true
-odoo_test_h_pilori,H Pilori,35.00,service,product_category_labtests,LAB-H_PILORI,H Pilori - Laboratory Test,true,false,true
 odoo_test_h_influenzae,H. influenzae,35.00,service,product_category_labtests,LAB-H_INFLUENZAE,H. influenzae - Laboratory Test,true,false,true
+odoo_test_h_pilori,H Pilori,35.00,service,product_category_labtests,LAB-H_PILORI,H Pilori - Laboratory Test,true,false,true
+odoo_test_hb,Hb,18.00,service,product_category_labtests,LAB-HB,Hb - Laboratory Test,true,false,true
+odoo_test_hbglyque,HbGlyque,35.00,service,product_category_labtests,LAB-HBGLYQUE,HbGlyque - Laboratory Test,true,false,true
+odoo_test_hbs_ag_antigen_australia,HBs AG (antigén australia),40.09,service,product_category_labtests,LAB-HBS_AG_ANTIGEN_AUSTRALIA,HBs AG (antigén australia) - Laboratory Test,true,false,true
 odoo_test_hbsag_igg_1,HBsAg - IgG,35.00,service,product_category_labtests,LAB-HBSAG_IGG_1,HBsAg - IgG - Laboratory Test,true,false,true
 odoo_test_hbsag_igg_2,HBsAg IGG,35.00,service,product_category_labtests,LAB-HBSAG_IGG_2,HBsAg IGG - Laboratory Test,true,false,true
 odoo_test_hco3,HCO3,35.00,service,product_category_labtests,LAB-HCO3,HCO3 - Laboratory Test,true,false,true
@@ -234,13 +249,64 @@ odoo_test_hcv_igg,HCV IGG,70.00,service,product_category_labtests,LAB-HCV_IGG,HC
 odoo_test_hcv_igm,HCV IGM,70.00,service,product_category_labtests,LAB-HCV_IGM,HCV IGM - Laboratory Test,true,false,true
 odoo_test_hdl,HDL,40.00,service,product_category_labtests,LAB-HDL,HDL - Laboratory Test,true,false,true
 odoo_test_hdl_cholest_rol,HDL-cholestérol,35.00,service,product_category_labtests,LAB-HDL_CHOLEST_ROL,HDL-cholestérol - Laboratory Test,true,false,true
+odoo_test_hematies,Hematies,22.00,service,product_category_labtests,LAB-HEMATIES,Hematies - Laboratory Test,true,false,true
+odoo_test_hematocrite,Hematocrite,85.78,service,product_category_labtests,LAB-HEMATOCRITE,Hematocrite - Laboratory Test,true,false,true
+odoo_test_hepatitis_b_viral_load,HEPATITIS B VIRAL LOAD,82.50,service,product_category_labtests,LAB-HEPATITIS_B_VIRAL_LOAD,HEPATITIS B VIRAL LOAD - Laboratory Test,true,false,true
+odoo_test_hepatitis_c_viral_load,HEPATITIS C VIRAL LOAD,73.27,service,product_category_labtests,LAB-HEPATITIS_C_VIRAL_LOAD,HEPATITIS C VIRAL LOAD - Laboratory Test,true,false,true
+odoo_test_hepatitisbviralload_plasma,HEPATITISBVIRALLOAD(Plasma),280.00,service,product_category_labtests,LAB-HEPATITISBVIRALLOAD_PLASMA,HEPATITISBVIRALLOAD(Plasma) - Laboratory Test,true,false,true
+odoo_test_hepatitisbviralload_serum,HEPATITISBVIRALLOAD(Serum),280.00,service,product_category_labtests,LAB-HEPATITISBVIRALLOAD_SERUM,HEPATITISBVIRALLOAD(Serum) - Laboratory Test,true,false,true
+odoo_test_hepatitiscviralload_plasma,HEPATITISCVIRALLOAD(Plasma),280.00,service,product_category_labtests,LAB-HEPATITISCVIRALLOAD_PLASMA,HEPATITISCVIRALLOAD(Plasma) - Laboratory Test,true,false,true
+odoo_test_hepatitiscviralload_serum,HEPATITISCVIRALLOAD(Serum),280.00,service,product_category_labtests,LAB-HEPATITISCVIRALLOAD_SERUM,HEPATITISCVIRALLOAD(Serum) - Laboratory Test,true,false,true
+odoo_test_histopathology_examination,Histopathology examination,11.06,service,product_category_labtests,LAB-HISTOPATHOLOGY_EXAMINATION,Histopathology examination - Laboratory Test,true,false,true
 odoo_test_hiv_blot,HIV Blot,35.00,service,product_category_labtests,LAB-HIV_BLOT,HIV Blot - Laboratory Test,true,false,true
 odoo_test_hiv_elisa,HIV Elisa,75.00,service,product_category_labtests,LAB-HIV_ELISA,HIV Elisa - Laboratory Test,true,false,true
+odoo_test_hiv_infant_viral_load,HIV INFANT VIRAL LOAD,67.26,service,product_category_labtests,LAB-HIV_INFANT_VIRAL_LOAD,HIV INFANT VIRAL LOAD - Laboratory Test,true,false,true
 odoo_test_hiv_pcr,HIV PCR,320.00,service,product_category_labtests,LAB-HIV_PCR,HIV PCR - Laboratory Test,true,false,true
-odoo_test_hiv_western_blot,HIV Western Blot,180.00,service,product_category_labtests,LAB-HIV_WESTERN_BLOT,HIV Western Blot - Laboratory Test,true,false,true
 odoo_test_hiv_test_rapide,HIV test rapide,35.00,service,product_category_labtests,LAB-HIV_TEST_RAPIDE,HIV test rapide - Laboratory Test,true,false,true
+odoo_test_hiv_viral_load,HIV VIRAL LOAD,21.73,service,product_category_labtests,LAB-HIV_VIRAL_LOAD,HIV VIRAL LOAD - Laboratory Test,true,false,true
+odoo_test_hiv_western_blot,HIV Western Blot,180.00,service,product_category_labtests,LAB-HIV_WESTERN_BLOT,HIV Western Blot - Laboratory Test,true,false,true
+odoo_test_hivinfantviralload_dbs,HIVINFANTVIRALLOAD(DBS),350.00,service,product_category_labtests,LAB-HIVINFANTVIRALLOAD_DBS,HIVINFANTVIRALLOAD(DBS) - Laboratory Test,true,false,true
+odoo_test_hivinfantviralload_plasma,HIVINFANTVIRALLOAD(Plasma),350.00,service,product_category_labtests,LAB-HIVINFANTVIRALLOAD_PLASMA,HIVINFANTVIRALLOAD(Plasma) - Laboratory Test,true,false,true
+odoo_test_hivinfantviralload_serum,HIVINFANTVIRALLOAD(Serum),350.00,service,product_category_labtests,LAB-HIVINFANTVIRALLOAD_SERUM,HIVINFANTVIRALLOAD(Serum) - Laboratory Test,true,false,true
+odoo_test_hivviralload_dbs,HIVVIRALLOAD(DBS),300.00,service,product_category_labtests,LAB-HIVVIRALLOAD_DBS,HIVVIRALLOAD(DBS) - Laboratory Test,true,false,true
+odoo_test_hivviralload_plasma,HIVVIRALLOAD(Plasma),300.00,service,product_category_labtests,LAB-HIVVIRALLOAD_PLASMA,HIVVIRALLOAD(Plasma) - Laboratory Test,true,false,true
+odoo_test_hivviralload_serum,HIVVIRALLOAD(Serum),300.00,service,product_category_labtests,LAB-HIVVIRALLOAD_SERUM,HIVVIRALLOAD(Serum) - Laboratory Test,true,false,true
 odoo_test_htlv_i_et_ii,HTLV I et II,35.00,service,product_category_labtests,LAB-HTLV_I_ET_II,HTLV I et II - Laboratory Test,true,false,true
-odoo_test_hb,Hb,18.00,service,product_category_labtests,LAB-HB,Hb - Laboratory Test,true,false,true
-odoo_test_hbglyque,HbGlyque,35.00,service,product_category_labtests,LAB-HBGLYQUE,HbGlyque - Laboratory Test,true,false,true
-odoo_test_hematies,Hematies,22.00,service,product_category_labtests,LAB-HEMATIES,Hematies - Laboratory Test,true,false,true
-odoo_test_hematocrite,Hematocrite,18.00,service,product_category_labtests,LAB-HEMATOCRITE,Hematocrite - Laboratory Test,true,false,true
+odoo_test_integral,Integral,66.34,service,product_category_labtests,LAB-INTEGRAL,Integral - Laboratory Test,true,false,true
+odoo_test_katooma,Katooma,69.81,service,product_category_labtests,LAB-KATOOMA,Katooma - Laboratory Test,true,false,true
+odoo_test_ldl_cholesterol,LDL cholesterol,86.28,service,product_category_labtests,LAB-LDL_CHOLESTEROL,LDL cholesterol - Laboratory Test,true,false,true
+odoo_test_lymphocytes_abs,Lymphocytes (Abs),93.07,service,product_category_labtests,LAB-LYMPHOCYTES_ABS,Lymphocytes (Abs) - Laboratory Test,true,false,true
+odoo_test_lymphocytes_percent,Lymphocytes (%),87.06,service,product_category_labtests,LAB-LYMPHOCYTES_PERCENT,Lymphocytes (%) - Laboratory Test,true,false,true
+odoo_test_mesure_charge_virale,Mesure de la charge virale,14.03,service,product_category_labtests,LAB-MESURE_CHARGE_VIRALE,Mesure de la charge virale - Laboratory Test,true,false,true
+odoo_test_monocytes_abs,Monocytes (Abs),56.49,service,product_category_labtests,LAB-MONOCYTES_ABS,Monocytes (Abs) - Laboratory Test,true,false,true
+odoo_test_monocytes_percent,Monocytes (%),14.89,service,product_category_labtests,LAB-MONOCYTES_PERCENT,Monocytes (%) - Laboratory Test,true,false,true
+odoo_test_murex,Murex,83.05,service,product_category_labtests,LAB-MUREX,Murex - Laboratory Test,true,false,true
+odoo_test_num_ration_globules_blancs,Numération des globules blancs,47.53,service,product_category_labtests,LAB-NUM_RATION_GLOBULES_BLANCS,Numération des globules blancs - Laboratory Test,true,false,true
+odoo_test_num_ration_globules_rouges,Numération des globules rouges,14.39,service,product_category_labtests,LAB-NUM_RATION_GLOBULES_ROUGES,Numération des globules rouges - Laboratory Test,true,false,true
+odoo_test_p24_ag,p24 Ag,70.85,service,product_category_labtests,LAB-P24_AG,p24 Ag - Laboratory Test,true,false,true
+odoo_test_plaquette,Plaquette,31.12,service,product_category_labtests,LAB-PLAQUETTE,Plaquette - Laboratory Test,true,false,true
+odoo_test_polio,Polio,21.56,service,product_category_labtests,LAB-POLIO,Polio - Laboratory Test,true,false,true
+odoo_test_polynucl_aires_basophiles_abs,Polynucléaires basophiles (Abs),37.74,service,product_category_labtests,LAB-POLYNUCL_AIRES_BASOPHILES_ABS,Polynucléaires basophiles (Abs) - Laboratory Test,true,false,true
+odoo_test_polynucl_aires_basophiles_percent,Polynucléaires basophiles (%),36.94,service,product_category_labtests,LAB-POLYNUCL_AIRES_BASOPHILES_PERCENT,Polynucléaires basophiles (%) - Laboratory Test,true,false,true
+odoo_test_polynucl_aires_eosinophiles_abs,Polynucléaires Eosinophiles (Abs),50.46,service,product_category_labtests,LAB-POLYNUCL_AIRES_EOSINOPHILES_ABS,Polynucléaires Eosinophiles (Abs) - Laboratory Test,true,false,true
+odoo_test_polynucl_aires_eosinophiles_percent,Polynucléaires Eosinophiles (%),52.39,service,product_category_labtests,LAB-POLYNUCL_AIRES_EOSINOPHILES_PERCENT,Polynucléaires Eosinophiles (%) - Laboratory Test,true,false,true
+odoo_test_polynucl_aires_neutrophiles_abs,Polynucléaires Neutrophiles (Abs),77.75,service,product_category_labtests,LAB-POLYNUCL_AIRES_NEUTROPHILES_ABS,Polynucléaires Neutrophiles (Abs) - Laboratory Test,true,false,true
+odoo_test_polynucl_aires_neutrophiles_percent,Polynucléaires Neutrophiles (%),37.07,service,product_category_labtests,LAB-POLYNUCL_AIRES_NEUTROPHILES_PERCENT,Polynucléaires Neutrophiles (%) - Laboratory Test,true,false,true
+odoo_test_prolans_bhcg_urines_24h,Prolans (BHCG) urines de 24 h,76.35,service,product_category_labtests,LAB-PROLANS_BHCG_URINES_24H,Prolans (BHCG) urines de 24 h - Laboratory Test,true,false,true
+odoo_test_prot_inurie_sur_bandelette,Protéinurie sur bandelette,34.17,service,product_category_labtests,LAB-PROT_INURIE_SUR_BANDELETTE,Protéinurie sur bandelette - Laboratory Test,true,false,true
+odoo_test_stat_pak,Stat-Pak,21.03,service,product_category_labtests,LAB-STAT_PAK,Stat-Pak - Laboratory Test,true,false,true
+odoo_test_teneur_corpusculaire_moyenne_h_moglobine,Teneur Corpusculaire Moyenne en Hémoglobine,33.87,service,product_category_labtests,LAB-TENEUR_CORPUSCULAIRE_MOYENNE_H_MOGLOBINE,Teneur Corpusculaire Moyenne en Hémoglobine - Laboratory Test,true,false,true
+odoo_test_test_rapide_vih,Test rapide VIH,27.55,service,product_category_labtests,LAB-TEST_RAPIDE_VIH,Test rapide VIH - Laboratory Test,true,false,true
+odoo_test_test_urinaire_grossesse,Test urinaire de grossesse,67.87,service,product_category_labtests,LAB-TEST_URINAIRE_GROSSESSE,Test urinaire de grossesse - Laboratory Test,true,false,true
+odoo_test_transaminases_altl,Transaminases ALTL,24.12,service,product_category_labtests,LAB-TRANSAMINASES_ALTL,Transaminases ALTL - Laboratory Test,true,false,true
+odoo_test_transaminases_astl,Transaminases ASTL,90.98,service,product_category_labtests,LAB-TRANSAMINASES_ASTL,Transaminases ASTL - Laboratory Test,true,false,true
+odoo_test_transaminases_got_37c,Transaminases GOT (37°C),55.41,service,product_category_labtests,LAB-TRANSAMINASES_GOT_37C,Transaminases GOT (37°C) - Laboratory Test,true,false,true
+odoo_test_transaminases_gpt_37c,Transaminases GPT (37°C),38.54,service,product_category_labtests,LAB-TRANSAMINASES_GPT_37C,Transaminases GPT (37°C) - Laboratory Test,true,false,true
+odoo_test_triglyc_rides,Triglycérides,98.76,service,product_category_labtests,LAB-TRIGLYC_RIDES,Triglycérides - Laboratory Test,true,false,true
+odoo_test_tt_test,tt test,38.30,service,product_category_labtests,LAB-TT_TEST,tt test - Laboratory Test,true,false,true
+odoo_test_viral_load,Viral Load,70.25,service,product_category_labtests,LAB-VIRAL_LOAD,Viral Load - Laboratory Test,true,false,true
+odoo_test_vironostika,Vironostika,65.89,service,product_category_labtests,LAB-VIRONOSTIKA,Vironostika - Laboratory Test,true,false,true
+odoo_test_volume_globulaire_moyen,Volume Globulaire Moyen,96.66,service,product_category_labtests,LAB-VOLUME_GLOBULAIRE_MOYEN,Volume Globulaire Moyen - Laboratory Test,true,false,true
+odoo_test_western_blot_1,Western Blot 1,35.27,service,product_category_labtests,LAB-WESTERN_BLOT_1,Western Blot 1 - Laboratory Test,true,false,true
+odoo_test_western_blot_2,Western Blot 2,50.29,service,product_category_labtests,LAB-WESTERN_BLOT_2,Western Blot 2 - Laboratory Test,true,false,true
+odoo_test_western_blot_vih,Western blot VIH,80.08,service,product_category_labtests,LAB-WESTERN_BLOT_VIH,Western blot VIH - Laboratory Test,true,false,true
