@@ -1,202 +1,30 @@
-test_name,product_name,quantity,price_unit
-tt test,tt test,52,38.3
-amniocentèse,amniocentèse,17,30.36
-Polio,Polio,98,21.56
-Glucose,Glucose,68,22.65
-tt test,tt test,54,52.1
-Transaminases GPT (37°C),Transaminases GPT (37°C),14,38.54
-Transaminases G0T (37°C),Transaminases G0T (37°C),100,55.41
-Créatinine,Créatinine,67,62.09
-Cholestérol HDL,Cholestérol HDL,14,66.11
-Triglycérides,Triglycérides,84,98.76
-Polio,Polio,24,43.9
-Cholestérol total,Cholestérol total,8,78.87
-LDL cholesterol,LDL cholesterol,47,86.28
-Katooma,Katooma,73,69.81
-Albumine recherche miction,Albumine recherche miction,67,67.44
-Test urinaire de grossesse,Test urinaire de grossesse,27,67.87
-Protéinurie sur bandelette,Protéinurie sur bandelette,38,34.17
-Prolans (BHCG) urines de 24 h,Prolans (BHCG) urines de 24 h,37,76.35
-Transaminases ALTL,Transaminases ALTL,78,24.12
-Transaminases ASTL,Transaminases ASTL,98,90.98
-Créatininémie,Créatininémie,91,46.35
-Glycémie,Glycémie,64,58.2
-Numération des globules blancs,Numération des globules blancs,83,47.53
-Numération des globules rouges,Numération des globules rouges,98,14.39
-Hémoglobine,Hémoglobine,90,50.37
-Hématocrite,Hématocrite,72,85.78
-Volume Globulaire Moyen,Volume Globulaire Moyen,20,96.66
-Teneur Corpusculaire Moyenne en Hémoglobine,Teneur Corpusculaire Moyenne en Hémoglobine,72,33.87
-Concentration Corpusculaire Moyenne en Hémoglobine,Concentration Corpusculaire Moyenne en Hémoglobine,96,31.74
-Plaquette,Plaquette,19,31.12
-Polynucléaires Neutrophiles (%),Polynucléaires Neutrophiles (%),47,37.07
-Polynucléaires Neutrophiles (Abs),Polynucléaires Neutrophiles (Abs),57,77.75
-Polynucléaires Eosinophiles (%),Polynucléaires Eosinophiles (%),30,52.39
-Polynucléaires Eosinophiles (Abs),Polynucléaires Eosinophiles (Abs),79,50.46
-Polynucléaires basophiles (%),Polynucléaires basophiles (%),13,36.94
-Polynucléaires basophiles (Abs),Polynucléaires basophiles (Abs),23,37.74
-Lymphocytes (%),Lymphocytes (%),45,87.06
-Lymphocytes (Abs),Lymphocytes (Abs),7,93.07
-Monocytes (%),Monocytes (%),89,14.89
-Monocytes (Abs),Monocytes (Abs),83,56.49
-Baso %,Baso %,23,75.45
-Le test,Le test,50,76.39
-RBC Descriptive,RBC Descriptive,72,82.47
-GB,GB,88,73.67
-GR,GR,58,96.81
-Hemademo,Hemademo,47,48.77
-Casey Test,Casey Test,46,97.05
-test1,test1,96,70.96
-BA#,BA#,7,94.86
-EO#,EO#,50,82.11
-LY#,LY#,79,19.83
-MO#,MO#,100,82.54
-NE#,NE#,35,28.95
-Neut %,Neut %,51,23.15
-Lymph %,Lymph %,11,93.05
-Mono %,Mono %,92,55.4
-Eo %,Eo %,2,52.3
-CCMH,CCMH,42,99.91
-HCT,HCT,86,53.74
-Hb,Hb,86,91.85
-VGM,VGM,37,19.58
-TCMH,TCMH,97,41.09
-PLQ,PLQ,94,64.08
-Actin Smooth Muscle,Actin Smooth Muscle,42,91.46
-AMACR (p504 s),AMACR (p504 s),61,28.61
-Anti-CD 3,Anti-CD 3,52,44.16
-Anti-CD 5,Anti-CD 5,58,72.39
-Anti-CD10,Anti-CD10,30,64.92
-Anti-CD15,Anti-CD15,59,94.38
-Anti-CD20,Anti-CD20,52,32.29
-Anti-CD22,Anti-CD22,17,93.75
-Anti-CD30,Anti-CD30,15,88.27
-Anti-CD34,Anti-CD34,19,51.7
-Anti-CD45,Anti-CD45,27,69.74
-Anti-CD56,Anti-CD56,4,98.27
-Anti-CD7,Anti-CD7,2,56.23
-Anti-CD79a,Anti-CD79a,16,19.97
-Anti-CD99 (O13),Anti-CD99 (O13),42,76.39
-Anti-CDX-2 (EPR2764Y),Anti-CDX-2 (EPR2764Y),69,17.77
-Anti-Chromogranin A,Anti-Chromogranin A,64,78.06
-Anti-Cyclin D1 (SP4-R),Anti-Cyclin D1 (SP4-R),37,82.81
-Anti-Cytokeratin 20,Anti-Cytokeratin 20,30,52.9
-Anti-Cytokeratin 5/6,Anti-Cytokeratin 5/6,73,51.06
-Anti-Cytokeratin 7,Anti-Cytokeratin 7,67,19.96
-Anti-Desmin,Anti-Desmin,54,80.08
-Anti-E-Cadherin,Anti-E-Cadherin,4,53.46
-Anti-EMA (E29),Anti-EMA (E29),99,56.71
-Anti-ER,Anti-ER,92,21.09
-Anti-Gata 3,Anti-Gata 3,28,53.19
-Anti-hepatocyte Specific Antigen (Hep Par-1),Anti-hepatocyte Specific Antigen (Hep Par-1),16,29.0
-Anti-HER2,Anti-HER2,66,77.41
-Anti-Ki67,Anti-Ki67,34,77.37
-Anti-melanosome (HMB45),Anti-melanosome (HMB45),38,14.38
-Anti-MUC2,Anti-MUC2,97,55.76
-Anti-MUM1,Anti-MUM1,11,41.3
-Anti-p40 (BC28),Anti-p40 (BC28),55,38.53
-Anti-p63 (4A4),Anti-p63 (4A4),84,81.63
-Anti-Pan Keratin,Anti-Pan Keratin,59,97.12
-Anti-PR,Anti-PR,3,99.67
-Anti-S100,Anti-S100,16,34.63
-Anti-Synaptophysin (SP11),Anti-Synaptophysin (SP11),80,93.47
-Anti-Thyroid Transcription Factor,Anti-Thyroid Transcription Factor,17,47.24
-Anti-Vimentin,Anti-Vimentin,19,42.93
-BCL 2,BCL 2,98,84.05
-BCL 6,BCL 6,91,31.52
-BerEp4,BerEp4,44,84.92
-Calponin,Calponin,44,30.8
-Calretinin,Calretinin,33,51.04
-CINtec® p16 Histology,CINtec® p16 Histology,45,24.18
-DOG1 (SP31),DOG1 (SP31),39,56.01
-Glial Fibrillary Acidic Protein,Glial Fibrillary Acidic Protein,100,94.95
-Her2 Dual ISH,Her2 Dual ISH,57,78.95
-Inhibin,Inhibin,26,40.84
-Myogenin (F5D),Myogenin (F5D),80,11.03
-Napsin A (MRQ-60),Napsin A (MRQ-60),72,42.43
-P 53,P 53,45,21.42
-Pax 5,Pax 5,34,39.47
-Pax 8,Pax 8,99,95.22
-Thyroglobulin (2H11+6E1),Thyroglobulin (2H11+6E1),69,28.47
-Wilms' tumor 1 protein (WT1),Wilms' tumor 1 protein (WT1),13,66.16
-DemoA,DemoA,74,21.01
-Dénombrement des lymphocytes CD4 (mm3),Dénombrement des lymphocytes CD4 (mm3),71,31.82
-Dénombrement des lymphocytes  CD4 (%),Dénombrement des lymphocytes  CD4 (%),41,17.12
-CD4,CD4,19,29.57
-CD3 percentage count,CD3 percentage count,35,12.03
-CD4 percentage count,CD4 percentage count,4,45.69
-CD4 absolute count,CD4 absolute count,61,77.25
-DENGUE PCR,DENGUE PCR,91,51.29
-HIV INFANT VIRAL LOAD,HIV INFANT VIRAL LOAD,93,28.64
-HIV VIRAL LOAD,HIV VIRAL LOAD,38,66.32
-Glu,Glu,5,55.19
-COVID-19 PCR,COVID-19 PCR,43,12.65
-COVID-19 ANITBODY IgG,COVID-19 ANITBODY IgG,21,11.04
-COVID-19 ANITBODY IgM,COVID-19 ANITBODY IgM,34,38.88
-DENGUE PCR,DENGUE PCR,61,51.46
-HEPATITIS B VIRAL LOAD,HEPATITIS B VIRAL LOAD,4,82.5
-HEPATITIS C VIRAL LOAD,HEPATITIS C VIRAL LOAD,88,73.27
-HIV INFANT VIRAL LOAD,HIV INFANT VIRAL LOAD,55,56.62
-HIV VIRAL LOAD,HIV VIRAL LOAD,89,21.6
-COVID-19 PCR,COVID-19 PCR,84,88.25
-test,test,10,66.21
-Mesure de la charge virale,Mesure de la charge virale,13,14.03
-Detection de la resistance aux antiretroviraux,Detection de la resistance aux antiretroviraux,90,89.2
-COVID-19 PCR,COVID-19 PCR,48,20.7
-analyse du liquide gastrique,analyse du liquide gastrique,47,17.37
-Coloration cytochimique,Coloration cytochimique,87,53.1
-COVID-19 ANITBODY IgG,COVID-19 ANITBODY IgG,54,81.18
-COVID-19 ANITBODY IgM,COVID-19 ANITBODY IgM,58,19.73
-DENGUE PCR,DENGUE PCR,57,83.57
-HEPATITIS B VIRAL LOAD,HEPATITIS B VIRAL LOAD,56,20.28
-HIV INFANT VIRAL LOAD,HIV INFANT VIRAL LOAD,27,67.26
-HIV VIRAL LOAD,HIV VIRAL LOAD,48,21.73
-penicillin,penicillin,90,98.84
-amoxicylin,amoxicylin,13,56.73
-analyse du liquide gastrique,analyse du liquide gastrique,73,81.43
-Coloration cytochimique,Coloration cytochimique,53,12.02
-RBC desc,RBC desc,62,99.24
-culture de Sang,culture de Sang,76,83.41
-test,test,41,72.29
-Histopathology examination,Histopathology examination,88,11.06
-Murex,Murex,80,83.05
-Integral,Integral,88,66.34
-Vironostika,Vironostika,11,65.89
-Genie II,Genie II,67,29.88
-Innolia,Innolia,7,83.47
-Bioline,Bioline,50,91.06
-Genie II 100,Genie II 100,10,66.66
-Genie II 10,Genie II 10,23,95.0
-Western Blot 1,Western Blot 1,9,35.27
-Western Blot 2,Western Blot 2,88,50.29
-p24 Ag,p24 Ag,86,70.85
-Test rapide VIH,Test rapide VIH,21,27.55
-Bioline,Bioline,9,43.23
-Determine,Determine,31,76.55
-Murex,Murex,29,21.21
-Vironostika,Vironostika,51,43.32
-P24 Ag,P24 Ag,26,88.03
-Stat-Pak,Stat-Pak,20,21.03
-Genie III,Genie III,52,83.37
-Western blot VIH,Western blot VIH,65,80.08
-Test rapide VIH,Test rapide VIH,98,88.17
-Bioline,Bioline,75,96.22
-Determine,Determine,24,15.78
-Stat-Pak,Stat-Pak,73,87.2
-Genie III,Genie III,87,24.45
-french,french,82,98.54
-Test rapide VIH,Test rapide VIH,14,91.02
-HBs AG (antigén australia),HBs AG (antigén australia),48,40.09
-Murex,Murex,45,50.84
-Determine,Determine,97,92.69
-Vironostika,Vironostika,28,88.59
-P24 Ag,P24 Ag,4,60.65
-Stat-Pak,Stat-Pak,87,44.4
-Genie III,Genie III,70,45.94
-Western blot VIH,Western blot VIH,89,87.88
-french,french,7,34.92
-Amylase updated,Amylase updated,4,26.45
-Bioline updated,Bioline updated,79,64.15
-DNA PCR,DNA PCR,38,76.64
-Génotypage,Génotypage,5,90.49
-Viral Load,Viral Load,16,70.25
+loinc_code,product_name,quantity,price_unit
+333-333,Albumine recherche miction,8,76
+718-7,Hémoglobine,8,73
+787-2,Volume Globulaire Moyen,8,69
+777-3,Plaquette,1,32
+736-9,Lymphocytes (%),3,15
+731-0,Lymphocytes (Abs),10,32
+742-7,Monocytes (Abs),5,44
+"12-1234 ",Baso %,9,55
+1236884,Casey Test,2,67
+7855-0,DENGUE PCR,3,29
+10351-5,HIV VIRAL LOAD,10,11
+94500-6,COVID-19 PCR,10,22
+94547-7,COVID-19 ANITBODY IgG,1,81
+94547-7,COVID-19 ANITBODY IgM,8,69
+7855-0,DENGUE PCR,6,33
+29615-2,HEPATITIS B VIRAL LOAD,9,75
+11011-4,HEPATITIS C VIRAL LOAD,9,45
+10351-5,HIV VIRAL LOAD,2,90
+94500-6,COVID-19 PCR,10,44
+94500-6,COVID-19 PCR,3,49
+94547-7,COVID-19 ANITBODY IgG,7,79
+94547-7,COVID-19 ANITBODY IgM,9,25
+7855-0,DENGUE PCR,1,85
+29615-2,HEPATITIS B VIRAL LOAD,10,45
+11011-4,HEPATITIS C VIRAL LOAD,10,89
+10351-5,HIV VIRAL LOAD,7,97
+19-78965,Determine,10,93
+82092-8,Amylase updated,9,73
+15052-2,Bioline updated,3,18
