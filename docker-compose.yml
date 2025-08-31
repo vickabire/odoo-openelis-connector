@@ -1,7 +1,9 @@
 services:
+## OpenELIS Serivices
   certs:
     container_name: oe-certs
     image: itechuw/certgen:main
+    platform: linux/amd64
     restart: always
     environment:
       - KEYSTORE_PW="kspass"
@@ -23,7 +25,7 @@ services:
       - ./configs/openelis/database/database.env
     volumes:
       # preserves the database between containers
-      - db-data2:/var/lib/postgresql/data
+      - ./configs/openelis/database/data:/var/lib/postgresql/data
       # files here will run on install
       - ./configs/openelis/database/dbInit:/docker-entrypoint-initdb.d
     networks:
@@ -36,7 +38,8 @@ services:
 
   oe.openelis.org:
     container_name: openelisglobal-webapp
-    image: itechuw/openelis-global-2-dev:develop
+    image: itechuw/openelis-global-2:develop 
+    platform: linux/amd64  
     depends_on:
       odoo.openelis.org:
         condition: service_started
@@ -56,7 +59,6 @@ services:
       - DEFAULT_PW=adminADMIN!
       - TZ=Africa/Nairobi
       - CATALINA_OPTS= -Ddatasource.url=jdbc:postgresql://database:5432/clinlims -Ddatasource.username=clinlims -Ddatasource.password=clinlims
-      - ODOO_MAPPING_FILE=/var/lib/openelis-global/properties/odoo-test-product-mapping.csv
     volumes:
       -  key_trust-store-volume:/etc/openelis-global
       -  lucene_index-vol:/var/lib/lucene_index
@@ -65,10 +67,9 @@ services:
       - ./configs/openelis/logs/oeLogs:/var/lib/openelis-global/logs
       - ./configs/openelis/logs/tomcatLogs/:/usr/local/tomcat/logs
       - ./configs/openelis/tomcat/oe_server.xml:/usr/local/tomcat/conf/server.xml
-      - ./configs/openelis/war/OpenELIS-Global.war:/usr/local/tomcat/webapps/OpenELIS-Global.war
       - ./configs/openelis/properties/SystemConfiguration.properties:/var/lib/openelis-global/properties/SystemConfiguration.properties
       - ./configs/openelis/test-map/test-loinc-map.csv:/var/lib/openelis-global/plugin-test-mappings/test-loinc-map.csv
-      - ./configs/openelis/properties/odoo-test-product-mapping.csv:/var/lib/openelis-global/properties/odoo-test-product-mapping.csv
+      - ./configs/openelis/odoo/odoo-test-product-mapping.csv:/var/lib/openelis-global/odoo/odoo-test-product-mapping.csv
     secrets:
       - source: datasource.password
       - source: common.properties
@@ -76,7 +77,8 @@ services:
 
   fhir.openelis.org:
     container_name: external-fhir-api
-    image: hapiproject/hapi:v6.6.0-tomcat
+    image: itechuw/openelis-global-2-fhir:develop
+    platform: linux/amd64
     depends_on:
       - database
       - certs
@@ -103,7 +105,8 @@ services:
       - source: hapi_application.yaml
 
   frontend.openelis.org:
-    image: itechuw/openelis-global-2-frontend-dev:develop
+    image: itechuw/openelis-global-2-frontend:develop
+    platform: linux/amd64
     container_name: openelisglobal-front-end
     networks:
       - hie
@@ -124,6 +127,8 @@ services:
     depends_on:
       - certs
 
+
+##ODOO Serivices
   odoo.openelis.org:
     container_name: odoo.openelis.org
     image: odoo:17
@@ -211,7 +216,6 @@ networks:
         - subnet: 172.20.1.0/24
 
 volumes:
-  db-data2:
   key_trust-store-volume:
   certs-vol:
   certs:
