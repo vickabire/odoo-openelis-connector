@@ -72,7 +72,7 @@ The project is configured to use the Mekom Solutions Maven repository:
 <repository>
     <id>mekom-solutions</id>
     <name>Mekom Solutions Repository</name>
-    <url>https://maven.mekomsolutions.com/repository/public/</url>
+    <url>https://nexus.mekomsolutions.net/repository/maven-public</url>
 </repository>
 ```
 
